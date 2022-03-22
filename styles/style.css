@@ -233,13 +233,13 @@ html {
         font-family: 'Lemonada', sans-serif;
         font-size: 48px;
         margin-bottom: 30px;
-        margin-top: -40px; }
+        margin-top: -20px; }
       #about .section1 .information div p {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 1.8;
         width: 700px;
         text-align: justify;
-        margin-top: 30px; }
+        margin-top: -30px; }
       #about .section1 .information div img {
         border-radius: 10px; }
   #about .section1 .visionAndMission {
@@ -280,7 +280,7 @@ html {
         font-size: 28px;
         margin-bottom: 20px; }
       #about .section2 article .adopt p {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 1.8;
         text-align: justify;
         width: 560px; }
