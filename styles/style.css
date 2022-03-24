@@ -106,6 +106,7 @@ html {
     margin: 10px auto 0;
     background-color: #abaaaa; }
 
+/*Homepage*/
 #content article {
   text-align: center;
   margin: 40px 0px; }
@@ -218,6 +219,7 @@ html {
       width: 300px;
       border-radius: 100%; }
 
+/*About*/
 #about .section1 {
   margin: 80px 0px; }
   #about .section1 .information {
@@ -288,6 +290,70 @@ html {
         border-radius: 20px;
         width: 500px; }
 
+/*Contact*/
+#contact {
+  background-image: url("../assets/images/1378122.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #contact h1 {
+    padding-top: 120px;
+    padding-bottom: 60px;
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Lemonada', sans-serif; }
+  #contact .formulary {
+    display: flex;
+    flex-flow: column;
+    align-items: center; }
+    #contact .formulary fieldset {
+      opacity: 98%;
+      border: none;
+      background-image: linear-gradient(#d7dbe4, #d4b05a);
+      width: 600px;
+      padding: 20px 40px;
+      border-radius: 30px; }
+      #contact .formulary fieldset div {
+        margin: 50px 0; }
+        #contact .formulary fieldset div label {
+          font-family: 'Poppins', sans-serif;
+          font-size: 20px;
+          margin: 0 10px; }
+        #contact .formulary fieldset div input {
+          width: 95%;
+          border-radius: 20px;
+          padding: 10px;
+          height: 20px; }
+        #contact .formulary fieldset div textarea {
+          width: 95%;
+          padding: 10px;
+          height: 150px;
+          border-radius: 20px; }
+    #contact .formulary div {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      margin: 40px;
+      font-family: 'Poppins', sans-serif; }
+      #contact .formulary div .checkbox {
+        display: flex;
+        flex-flow: row; }
+        #contact .formulary div .checkbox p {
+          font-size: 20px;
+          margin: 10px; }
+      #contact .formulary div .buttons {
+        margin-top: -20px;
+        display: inline; }
+        #contact .formulary div .buttons input {
+          border: none;
+          font-size: 24px;
+          padding: 20px;
+          margin: 0px 10px;
+          width: 300px; }
+        #contact .formulary div .buttons input:hover {
+          background-color: #e0bb60;
+          cursor: pointer; }
+
+/*****FOOTER*****/
 footer {
   background-color: rgba(0, 0, 0, 0.775);
   color: #fff;

@@ -11,6 +11,12 @@
     <link rel="apple-touch-icon" sizes="114x114" href="../assets/favicon/facivon.ico">
     <link rel="apple-touch-icon" sizes="152x152" href="../assets/favicon/favicon.ico">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="globalHeader">
@@ -22,7 +28,7 @@
                 <nav>
                     <ul>
                         <a href="../index.html"><li>HOME</li></a>
-                        <a href="../pages/dragons.html"><li>GET A DRAGON</li></a>
+                        <a href="../pages/dragons.html"><li>DRAGONS</li></a>
                         <a href="../pages/about.html"><li>ABOUT</li></a>
                         <a href="../pages/formulary.html"><li>CONTACT</li></a>
                     </ul>
@@ -33,32 +39,37 @@
             </div>
         </div>
     </header>
-    <main>
+    <main id="contact">
         <h1>Need help? Contact Us!</h1>
         <section>
-            <form action="get">
+            <form action="get" class="formulary">
                 <fieldset>
                     <div>
-                        <label for="email">Email Address:</label>
+                        <label for="email">Email Address:</label><br>
                         <input type="email" name="email" placeholder="example@domain.com">
                     </div>
                     <div>
-                        <label for="first name">Name:</label>
+                        <label for="first name">Name:</label><br>
                         <input type="text" name="first name">
-                        <label for="last name">Last Name:</label>
+                    </div>
+                    <div>
+                        <label for="last name">Last Name:</label><br>
                         <input type="text" name="last name">
                     </div>
                     <div>
-                        <label for="textarea">Description:</label>
+                        <label for="textarea">Description:</label><br>
                         <textarea name="textarea" placeholder="How can we help?"></textarea>
                     </div>
                 </fieldset>
                 <div>
-                    <input type="checkbox" name="tos" value="1" class="field"/>I agree to Draconia's Terms of Service and Privacy Policy
-                </div>
-                <div>
-                    <input type="submit" value="Submit" class="buttonForm"/>
-                    <input type="Reset" value="Clear All" class="buttonForm"/>
+                    <div class="checkbox">
+                        <input type="checkbox" name="tos" value="1" class="field"/>
+                        <p>I agree to Draconia's Terms of Service and Privacy Policy</p>
+                    </div>
+                    <div class="buttons">
+                        <input type="submit" value="Submit" class="buttonForm"/>
+                        <input type="Reset" value="Clear All" class="buttonForm"/>
+                    </div>
                 </div>
             </form>
         </section>

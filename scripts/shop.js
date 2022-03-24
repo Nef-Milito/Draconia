@@ -41,19 +41,19 @@ class Dragon {
 
 //Add all the products to an Array.
 
-dragons.push(new Dragon("ARID BADLANDS", "Bloodchaser", "Rare", "25", "0", "../assets/images/Bloodchaser/Arid Badlands/Arid_Badlands_Overview.png"));
-dragons.push(new Dragon("FERROUS MOUNTAINS", "Bloodchaser", "Common", "31", "0", "../assets/images/Bloodchaser/Ferrous Mountains/Ferrous_Mountains_Overview.png"));
-dragons.push(new Dragon("FJALNARRI MINES" || "FJALNÄRRI MINES", "Nightsnagger", "Epic", "5", "0", "../assets/images/Nightsnagger/Fjalnarri Mines/Fjalnarri_Mines_Overview.png"));
-dragons.push(new Dragon("FORGOTTEN BOG", "Nightsnagger", "Rare", "18", "0", "../assets/images/Nightsnagger/Forgotten Bog/Forgotten_Bog_Overview.png"));
-dragons.push(new Dragon("FROZEN LAKE", "Ironwing", "Epic", "6", "0", "../assets/images/Ironwing/Frozen Lake/Frozen_Lake_Overview.png"));
-dragons.push(new Dragon("HAERVAN CAVERNS", "Ironwing", "Epic", "3", "0", "../assets/images/Ironwing/Haervan Caverns/Haervan_Caverns_Overview.png"));
-dragons.push(new Dragon("HELSTOR" || "HELSTÖR", "Bloodchaser", "Legendary", "0", "1000", "../assets/images/Bloodchaser/Helstor/Helstor_Overview.png"));
-dragons.push(new Dragon("LAEGAN CHASMS", "Nightsnagger", "Epic", "0", "0", "../assets/images/Nightsnagger/Laegan Chasms/Laegan_Chasms_Overview.png"));
-dragons.push(new Dragon("OLMUND", "Ironwing", "Legendary", "2", "1000", "../assets/images/Ironwing/Olmund/Olmund_Overview.png"));
-dragons.push(new Dragon("RAGING RIVER", "Bloodchaser", "Epic", "11", "0", "../assets/images/Bloodchaser/Raging River/Raging_River_Overview.png"));
-dragons.push(new Dragon("RAYLESS DEPTHS", "Ironwing", "Rare", "26", "0", "../assets/images/Ironwing/Rayless Depths/Rayless_Depths_Overview.png"));
-dragons.push(new Dragon("SYGGIAN FRINGES", "Ironwing", "Epic", "7", "0", "../assets/images/Ironwing/Syggian Fringes/Syggian_Fringes_Overview.png"));
-dragons.push(new Dragon("TORRUNI DUNES", "Nightsnagger", "Epic", "5", "0", "../assets/images/Nightsnagger/Torruni Dunes/Torruni_Dunes_Overview.png"));
+dragons.push(new Dragon("ARID BADLANDS", "Bloodchaser", "Rare", "25", "500", "../assets/images/Bloodchaser/Arid Badlands/Arid_Badlands_Overview.png"));
+dragons.push(new Dragon("FERROUS MOUNTAINS", "Bloodchaser", "Common", "31", "100", "../assets/images/Bloodchaser/Ferrous Mountains/Ferrous_Mountains_Overview.png"));
+dragons.push(new Dragon("FJALNARRI MINES" || "FJALNÄRRI MINES", "Nightsnagger", "Epic", "5", "1000", "../assets/images/Nightsnagger/Fjalnarri Mines/Fjalnarri_Mines_Overview.png"));
+dragons.push(new Dragon("FORGOTTEN BOG", "Nightsnagger", "Rare", "18", "500", "../assets/images/Nightsnagger/Forgotten Bog/Forgotten_Bog_Overview.png"));
+dragons.push(new Dragon("FROZEN LAKE", "Ironwing", "Epic", "6", "1000", "../assets/images/Ironwing/Frozen Lake/Frozen_Lake_Overview.png"));
+dragons.push(new Dragon("HAERVAN CAVERNS", "Ironwing", "Epic", "3", "1000", "../assets/images/Ironwing/Haervan Caverns/Haervan_Caverns_Overview.png"));
+dragons.push(new Dragon("HELSTOR" || "HELSTÖR", "Bloodchaser", "Legendary", "0", "10000", "../assets/images/Bloodchaser/Helstor/Helstor_Overview.png"));
+dragons.push(new Dragon("LAEGAN CHASMS", "Nightsnagger", "Epic", "0", "1000", "../assets/images/Nightsnagger/Laegan Chasms/Laegan_Chasms_Overview.png"));
+dragons.push(new Dragon("OLMUND", "Ironwing", "Legendary", "2", "10000", "../assets/images/Ironwing/Olmund/Olmund_Overview.png"));
+dragons.push(new Dragon("RAGING RIVER", "Bloodchaser", "Epic", "11", "1000", "../assets/images/Bloodchaser/Raging River/Raging_River_Overview.png"));
+dragons.push(new Dragon("RAYLESS DEPTHS", "Ironwing", "Rare", "26", "500", "../assets/images/Ironwing/Rayless Depths/Rayless_Depths_Overview.png"));
+dragons.push(new Dragon("SYGGIAN FRINGES", "Ironwing", "Epic", "7", "1000", "../assets/images/Ironwing/Syggian Fringes/Syggian_Fringes_Overview.png"));
+dragons.push(new Dragon("TORRUNI DUNES", "Nightsnagger", "Epic", "5", "1000", "../assets/images/Nightsnagger/Torruni Dunes/Torruni_Dunes_Overview.png"));
 dragons.push(new Dragon("VENFIR", "Nightsnagger", "Legendary", "2", "1000", "../assets/images/Nightsnagger/Venfir/Venfir_Lingering_Dread_Overview.png"));
 dragons.push(new Dragon("WARELM", "Bloodchaser", "Legendary", "1", "1000", "../assets/images/Bloodchaser/Warelm/Warelm_Overview.png"));
 
