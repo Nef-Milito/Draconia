@@ -299,6 +299,102 @@ html {
     }
 }
 
+/*Dragons*/
+#shop {
+    padding: 80px 30px;
+
+    #shopTitle {
+        padding-bottom: 20px;
+        text-align: center;
+        font-size: 48px;
+        font-family: 'Lemonada', sans-serif;
+    }
+
+    hr {
+        width: 1350px;
+        margin: auto;
+    }
+
+    section {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        align-items: center;
+
+        .card {
+            display: inline-block;
+            text-align: center;
+            width: 400px;
+            background-color: #222831;
+            border-radius: 20px;
+            margin: 30px;
+            color: #fff;
+
+            h3 {
+                font-size: 32px;
+                font-family: 'Lemonada', sans-serif;
+                margin: 20px 0px 10px;
+                color: #ffbe33;
+            }
+            
+            img {
+                border-radius: 10px;
+                margin: 10px;
+            }
+            
+            p {
+                text-align: center;
+                font-size: 24px;
+                margin: 20px;
+            }
+            
+            .rarityCommon {
+                color: #859596;
+            }
+
+            .rarityRare {
+                color: #308ec1;
+            }
+
+            .rarityEpic {
+                color: #8868be;
+            }
+
+            .rarityLegendary {
+                color: #b1963e;
+            }
+
+            #rarity {
+                font-weight: 600;
+                font-size: 30px;
+            }
+            
+            #rarity:after {
+                content: "";
+                display: block;
+                height: 2px;
+                width: 350px;
+                margin: 20px auto 0;
+                background-color: #fff;
+            }
+            
+            .price {
+                margin: 10px 20px 20px;
+                padding: 10px;
+                background-color: #ffbe33;
+                border-radius: 30px;
+                
+                p {
+                color: #fff;
+                font-size: 36px;
+                font-weight: 700;
+                font-family: 'Poppins', sans-serif;
+                }
+            }
+        }
+    }
+}
+
 /*About*/
 #about {
     .section1 {

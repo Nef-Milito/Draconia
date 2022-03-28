@@ -219,6 +219,71 @@ html {
       width: 300px;
       border-radius: 100%; }
 
+/*Dragons*/
+#shop {
+  padding: 80px 30px; }
+  #shop #shopTitle {
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Lemonada', sans-serif; }
+  #shop hr {
+    width: 1350px;
+    margin: auto; }
+  #shop section {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center; }
+    #shop section .card {
+      display: inline-block;
+      text-align: center;
+      width: 400px;
+      background-color: #222831;
+      border-radius: 20px;
+      margin: 30px;
+      color: #fff; }
+      #shop section .card h3 {
+        font-size: 32px;
+        font-family: 'Lemonada', sans-serif;
+        margin: 20px 0px 10px;
+        color: #ffbe33; }
+      #shop section .card img {
+        border-radius: 10px;
+        margin: 10px; }
+      #shop section .card p {
+        text-align: center;
+        font-size: 24px;
+        margin: 20px; }
+      #shop section .card .rarityCommon {
+        color: #859596; }
+      #shop section .card .rarityRare {
+        color: #308ec1; }
+      #shop section .card .rarityEpic {
+        color: #8868be; }
+      #shop section .card .rarityLegendary {
+        color: #b1963e; }
+      #shop section .card #rarity {
+        font-weight: 600;
+        font-size: 30px; }
+      #shop section .card #rarity:after {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 350px;
+        margin: 20px auto 0;
+        background-color: #fff; }
+      #shop section .card .price {
+        margin: 10px 20px 20px;
+        padding: 10px;
+        background-color: #ffbe33;
+        border-radius: 30px; }
+        #shop section .card .price p {
+          color: #fff;
+          font-size: 36px;
+          font-weight: 700;
+          font-family: 'Poppins', sans-serif; }
+
 /*About*/
 #about .section1 {
   margin: 80px 0px; }

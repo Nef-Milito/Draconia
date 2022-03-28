@@ -9,13 +9,13 @@ let choice;
 let placeholder = []
 
 class Dragon {
-    constructor(name, breed, rarity, stock, price, image) {
+    constructor(name, breed, rarity, stock, price, overview) {
         this.name = name;
         this.breed = breed;
         this.rarity = rarity;
         this.stock = parseInt(stock);
         this.price = parseFloat(price);
-        this.image = image
+        this.overview = overview
     }
 
     getName() {
@@ -36,6 +36,10 @@ class Dragon {
 
     getPrice() {
         return this.price;
+    }
+
+    getOverview() {
+        return this.overview;
     }
 }
 
@@ -60,6 +64,31 @@ dragons.push(new Dragon("WARELM", "Bloodchaser", "Legendary", "1", "1000", "../a
 function stock() {
     for (let i = 0; i < dragons.length; i++) {
         var dragonName = dragons[i].getName();
+        nameString += dragonName + "\n";
+    }
+
+    for (let i = 0; i < dragons.length; i++) {
+        var dragonName = dragons[i].getBreed();
+        nameString += dragonName + "\n";
+    }
+
+    for (let i = 0; i < dragons.length; i++) {
+        var dragonName = dragons[i].getRarity();
+        nameString += dragonName + "\n";
+    }
+
+    for (let i = 0; i < dragons.length; i++) {
+        var dragonName = dragons[i].getStock();
+        nameString += dragonName + "\n";
+    }
+
+    for (let i = 0; i < dragons.length; i++) {
+        var dragonName = dragons[i].getPrice();
+        nameString += dragonName + "\n";
+    }
+
+    for (let i = 0; i < dragons.length; i++) {
+        var dragonName = dragons[i].getOverview();
         nameString += dragonName + "\n";
     }
 }
@@ -93,130 +122,21 @@ function repeat() {
     }
 }
 
-repeat();
+/* repeat(); */
+
+//List the products.
+
+let shopContainer = document.getElementById(eggShop);
 
 
-//Discarded Array.
-
-/* const dragons = [
-    {
-        title: "dragon0",
-        name: "Arid Badlands",
-        breed: "Bloodchaser",
-        rarity: "Rare",
-        stock: 25,
-        price: 0
-    },
-    {
-        title: "dragon1",
-        name: "Ferrous Mountains",
-        breed: "Bloodchaser",
-        rarity: "Common",
-        stock: 31,
-        price: 0
-    },
-    {
-        title: "dragon2",
-        name: "Fjalnarri Mines" || "Fjalnärri Mines",
-        breed: "Nightsnagger",
-        rarity: "Epic",
-        stock: 5,
-        price: 0
-    },
-    {
-        title: "dragon3",
-        name: "Forgotten Bog",
-        breed: "Nightsnagger",
-        rarity: "Rare",
-        stock: 18,
-        price: 0
-    },
-    {
-        title: "dragon4",
-        name: "Frozen Lake",
-        breed: "Ironwing",
-        rarity: "Epic",
-        stock: 6,
-        price: 0
-    },
-    {
-        title: "dragon5",
-        name: "Haervan Caverns",
-        breed: "Ironwing",
-        rarity: "Epic",
-        stock: 3,
-        price: 0,
-    },
-    {
-        title: "dragon6",
-        name: "Helstor" || "Helstör",
-        breed: "Bloodchaser",
-        rarity: "Legendary",
-        stock: 0,
-        price: 1000
-    },
-    {
-        title: "dragon7",
-        name: "Laegan Chasms",
-        breed: "Nightsnagger",
-        rarity: "Epic",
-        stock: 0,
-        price: 0
-    },
-    {
-        title: "dragon8",
-        name: "Olmund",
-        breed: "Ironwing",
-        rarity: "Legendary",
-        stock: 2,
-        price: 1000
-    },
-    {
-        title: "dragon9",
-        name: "Raging River",
-        breed: "Bloodchaser",
-        rarity: "Epic",
-        stock: 11,
-        price: 0
-    },
-    {
-        title: "dragon10",
-        name: "Rayless Depths",
-        breed: "Ironwing",
-        rarity: "Rare",
-        stock: 26,
-        price: 0
-    },
-    {
-        title: "dragon11",
-        name: "Syggian Fringes",
-        breed: "Ironwing",
-        rarity: "Epic",
-        stock: 7,
-        price: 0
-    },
-    {
-        title: "dragon12",
-        name: "Torruni Dunes",
-        breed: "Nightsnagger",
-        rarity: "Epic",
-        stock: 5,
-        price: 0
-    },
-    {
-        title: "dragon13",
-        name: "Venfir",
-        breed: "Nightsnagger",
-        rarity: "Legendary",
-        stock: 2,
-        price: 1000
-    },
-    {
-        title: "dragon14",
-        name: "Warelm",
-        breed: "Bloodchaser",
-        rarity: "Legendary",
-        stock: 1,
-        price: 1000
-    }
-] */
+for (const dragon of dragons){
+    let card = document.createElement('div');
+    eggShop.appendChild(card);
+    card.className = 'card';
+    card.innerHTML =
+    `<h3 class="title">${dragon.name}</h3>
+    <img src="${dragon.overview}" class="image img-fluid" alt="Overview image">
+    <p class="breed">${dragon.breed}</p>
+    <p id="rarity" class="rarity${dragon.rarity}">${dragon.rarity}</p>
+    <div class="price"><p>USD$${dragon.price}</p></div>`
+}
