@@ -1,3 +1,9 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
 /************
     RESET
 ************/
@@ -14,6 +20,9 @@ html {
 .img-fluid {
   max-width: 100%;
   height: auto; }
+
+.displayNone {
+  display: none; }
 
 /*****HEADER*****/
 .headerBG {
@@ -61,9 +70,14 @@ html {
       color: #efc864; }
   #globalHeader .header-container .header-vectors {
     text-align: center; }
-    #globalHeader .header-container .header-vectors a img {
+    #globalHeader .header-container .header-vectors .location img {
       width: 50px;
-      height: 50px; }
+      height: 50px;
+      margin: 0px 10px 0 0; }
+    #globalHeader .header-container .header-vectors .account img {
+      width: 50px;
+      height: 50px;
+      margin: 0 0 0 10px; }
 
 #globalHeader .indexButton {
   display: flex;
@@ -236,53 +250,93 @@ html {
     justify-content: center;
     align-items: center; }
     #shop section .card {
-      display: inline-block;
-      text-align: center;
       width: 400px;
-      background-color: #222831;
-      border-radius: 20px;
-      margin: 30px;
-      color: #fff; }
-      #shop section .card h3 {
-        font-size: 32px;
-        font-family: 'Lemonada', sans-serif;
-        margin: 20px 0px 10px;
-        color: #ffbe33; }
-      #shop section .card img {
-        border-radius: 10px;
-        margin: 10px; }
-      #shop section .card p {
+      display: inline-block;
+      background-color: transparent;
+      perspective: 1000px;
+      margin: 30px 30px 650px; }
+      #shop section .card .card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
         text-align: center;
-        font-size: 24px;
-        margin: 20px; }
-      #shop section .card .rarityCommon {
-        color: #859596; }
-      #shop section .card .rarityRare {
-        color: #308ec1; }
-      #shop section .card .rarityEpic {
-        color: #8868be; }
-      #shop section .card .rarityLegendary {
-        color: #b1963e; }
-      #shop section .card #rarity {
-        font-weight: 600;
-        font-size: 30px; }
-      #shop section .card #rarity:after {
-        content: "";
-        display: block;
-        height: 2px;
-        width: 350px;
-        margin: 20px auto 0;
-        background-color: #fff; }
-      #shop section .card .price {
-        margin: 10px 20px 20px;
-        padding: 10px;
-        background-color: #ffbe33;
-        border-radius: 30px; }
-        #shop section .card .price p {
+        transition: transform 0.3s;
+        transform-style: preserve-3d; }
+        #shop section .card .card-inner .card-front {
+          background-color: #222831;
+          border-radius: 20px;
           color: #fff;
-          font-size: 36px;
-          font-weight: 700;
-          font-family: 'Poppins', sans-serif; }
+          padding: 10px 0px;
+          height: 620px; }
+          #shop section .card .card-inner .card-front h3 {
+            font-size: 32px;
+            font-family: 'Lemonada', sans-serif;
+            margin: 20px 0px 10px;
+            color: #ffbe33; }
+          #shop section .card .card-inner .card-front img {
+            border-radius: 10px;
+            margin: 10px; }
+          #shop section .card .card-inner .card-front p {
+            text-align: center;
+            font-size: 24px;
+            margin: 20px; }
+          #shop section .card .card-inner .card-front .rarityCommon {
+            color: #859596; }
+          #shop section .card .card-inner .card-front .rarityRare {
+            color: #308ec1; }
+          #shop section .card .card-inner .card-front .rarityEpic {
+            color: #8868be; }
+          #shop section .card .card-inner .card-front .rarityLegendary {
+            color: #b1963e; }
+          #shop section .card .card-inner .card-front #rarity {
+            font-weight: 600;
+            font-size: 30px; }
+          #shop section .card .card-inner .card-front #rarity:after {
+            content: "";
+            display: block;
+            height: 2px;
+            width: 350px;
+            margin: 20px auto 0;
+            background-color: #fff; }
+          #shop section .card .card-inner .card-front .price {
+            margin: 10px 20px 20px;
+            padding: 10px;
+            background-color: #ffbe33;
+            border-radius: 30px; }
+            #shop section .card .card-inner .card-front .price p {
+              color: #fff;
+              font-size: 36px;
+              font-weight: 700;
+              font-family: 'Poppins', sans-serif; }
+        #shop section .card .card-inner .card-back {
+          width: 400px;
+          background-color: #222831;
+          border-radius: 20px;
+          color: #fff;
+          padding: 10px 0px;
+          transform: rotateY(180deg);
+          height: 620px; }
+          #shop section .card .card-inner .card-back img {
+            border-radius: 10px;
+            margin: 30px 0; }
+          #shop section .card .card-inner .card-back .select {
+            margin: 30px 20px 20px;
+            background-color: #ffbe33;
+            border-radius: 30px;
+            padding: 30px 0; }
+            #shop section .card .card-inner .card-back .select p {
+              padding: 0px;
+              color: #fff;
+              font-size: 36px;
+              font-weight: 700;
+              font-family: 'Poppins', sans-serif; }
+        #shop section .card .card-inner .card-front,
+        #shop section .card .card-inner .card-back {
+          position: absolute;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
+    #shop section .card:hover .card-inner {
+      transform: rotateY(180deg); }
 
 /*About*/
 #about .section1 {
@@ -376,7 +430,7 @@ html {
       background-image: linear-gradient(#d7dbe4, #d4b05a);
       width: 600px;
       padding: 20px 40px;
-      border-radius: 30px; }
+      border-radius: 10px; }
       #contact .formulary fieldset div {
         margin: 50px 0; }
         #contact .formulary fieldset div label {
@@ -417,6 +471,104 @@ html {
         #contact .formulary div .buttons input:hover {
           background-color: #e0bb60;
           cursor: pointer; }
+
+/*Sign In*/
+#signin #login-form {
+  padding: 220px 0 150px; }
+  #signin #login-form #login {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center; }
+    #signin #login-form #login fieldset {
+      opacity: 98%;
+      border: none;
+      background-image: linear-gradient(#d7dbe4, #d4b05a);
+      width: 400px;
+      height: 300px;
+      padding: 20px 40px;
+      border-radius: 10px; }
+      #signin #login-form #login fieldset aside {
+        position: absolute;
+        z-index: 2;
+        right: 35.5%; }
+        #signin #login-form #login fieldset aside a img {
+          width: 30px; }
+        #signin #login-form #login fieldset aside img:hover {
+          animation-name: spin;
+          animation-duration: 5000ms;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear; }
+      #signin #login-form #login fieldset div {
+        margin: 50px 0; }
+        #signin #login-form #login fieldset div label {
+          font-family: 'Poppins', sans-serif;
+          font-size: 24px; }
+        #signin #login-form #login fieldset div input {
+          width: 95%;
+          border-radius: 0px;
+          padding: 10px;
+          height: 20px;
+          border: none; }
+    #signin #login-form #login .checkbox {
+      margin: 10px 0px 50px; }
+      #signin #login-form #login .checkbox p {
+        display: inline;
+        margin: 0px 10px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px; }
+    #signin #login-form #login .buttons {
+      margin-top: -20px;
+      display: inline; }
+      #signin #login-form #login .buttons input {
+        border: none;
+        font-size: 24px;
+        padding: 20px;
+        margin: 0px 10px;
+        width: 300px; }
+      #signin #login-form #login .buttons input:hover {
+        background-color: #e0bb60;
+        cursor: pointer; }
+
+#signin #signUp-form {
+  padding: 220px 0 150px; }
+  #signin #signUp-form #createAccount {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center; }
+    #signin #signUp-form #createAccount fieldset {
+      opacity: 98%;
+      border: none;
+      background-image: linear-gradient(#d7dbe4, #d4b05a);
+      width: 400px;
+      height: 820px;
+      padding: 20px 40px;
+      border-radius: 10px; }
+      #signin #signUp-form #createAccount fieldset div {
+        margin: 50px 0; }
+        #signin #signUp-form #createAccount fieldset div label {
+          font-family: 'Poppins', sans-serif;
+          font-size: 24px; }
+        #signin #signUp-form #createAccount fieldset div input {
+          width: 95%;
+          border-radius: 0px;
+          padding: 10px;
+          height: 20px;
+          border: none; }
+        #signin #signUp-form #createAccount fieldset div p {
+          font-size: 18px; }
+    #signin #signUp-form #createAccount div {
+      margin-top: 40px; }
+      #signin #signUp-form #createAccount div #register {
+        border: none;
+        font-size: 24px;
+        padding: 20px;
+        margin: 0px 10px;
+        width: 300px; }
+      #signin #signUp-form #createAccount div #register:hover {
+        background-color: #e0bb60;
+        cursor: pointer; }
 
 /*****FOOTER*****/
 footer {

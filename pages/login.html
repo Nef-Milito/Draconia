@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="draconia, dragon, dragons, wyvern, animals, adopt, adoption, contact, information, customer, support">
-    <title>Draconia - Contact</title>
+    <title>Document</title>
     <link rel="icon" href="../assets/favicon/favicon.ico" sizes="16x16">
     <link rel="apple-touch-icon" sizes="72x72" href="../assets/favicon/favicon.ico">
     <link rel="apple-touch-icon" sizes="114x114" href="../assets/favicon/facivon.ico">
@@ -40,37 +39,64 @@
             </div>
         </div>
     </header>
-    <main id="contact">
-        <h1>Need help? Contact Us!</h1>
-        <section>
-            <form action="get" class="formulary">
+    <main id="signin">
+        <section id="login-form">
+            <form id="login" class="displayNone">
                 <fieldset>
+                    <aside>
+                        <a href="#"><img class="admin" src="../assets/vectors/admin.svg"></a>
+                    </aside>
                     <div>
-                        <label for="email">Email Address:</label><br>
+                        <label for="email">EMAIL ADDRESS</label><br>
                         <input type="email" name="email" placeholder="example@domain.com">
                     </div>
                     <div>
-                        <label for="first name">Name:</label><br>
-                        <input type="text" name="first name">
+                        <label for="password">PASSWORD</label><br>
+                        <input type="password" name="password">
+                    </div>
+                </fieldset>
+                <div class="checkbox">
+                    <input type="checkbox" class="rememberMe"><p>Remember me.</p>
+                </div>
+                <div class="buttons">
+                    <input type="button" value="Sign In" id="signIn">
+                    <input type="button" value="Create Account" id="newAccount">
+                </div>
+            </form>
+        </section>
+        <section id="signUp-form" class="displayNone">
+            <form id="createAccount">
+                <fieldset>
+                    <div>
+                        <label for="username">Username</label><br>
+                        <input type="text" name="username">
                     </div>
                     <div>
-                        <label for="last name">Last Name:</label><br>
+                        <label for="name">Name</label><br>
+                        <input type="text" name="name">
+                    </div>
+                    <div>
+                        <label for="last name">Last Name</label><br>
                         <input type="text" name="last name">
                     </div>
                     <div>
-                        <label for="textarea">Description:</label><br>
-                        <textarea name="textarea" placeholder="How can we help?"></textarea>
+                        <label for="email">Email Address</label><br>
+                        <input type="email" name="email" placeholder="example@domain.com">
+                    </div>
+                    <div>
+                        <label for="password">Create Password</label><br>
+                        <input type="password" name="password">
+                    </div>
+                    <div>
+                        <label for="password">Confirm Password</label><br>
+                        <input type="password" name="password">
+                    </div>
+                    <div>
+                        <p>Have an account already? <a href="./login.html">Log In</a></p>
                     </div>
                 </fieldset>
                 <div>
-                    <div class="checkbox">
-                        <input type="checkbox" name="tos" value="1" class="field"/>
-                        <p>I agree to Draconia's Terms of Service and Privacy Policy</p>
-                    </div>
-                    <div class="buttons">
-                        <input type="submit" value="Submit" class="buttonForm"/>
-                        <input type="Reset" value="Clear All" class="buttonForm"/>
-                    </div>
+                    <input type="button" value="Submit" id="register">
                 </div>
             </form>
         </section>
@@ -94,5 +120,6 @@
             </div>
         </section>
     </footer>
+    <script src="../scripts/signin.js"></script>
 </body>
 </html>
