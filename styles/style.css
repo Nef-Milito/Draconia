@@ -1,9 +1,11 @@
+/* Animations --> */
 @keyframes spin {
   from {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
 
+/* Main Stylesheet --> */
 /************
     RESET
 ************/
@@ -604,3 +606,5 @@ footer {
           font-size: 18px; }
         footer section .policies ul li a:hover {
           color: #efc864; }
+
+/* Responsive Design --> */
