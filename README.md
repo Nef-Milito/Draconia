@@ -1,5 +1,5 @@
 # Draconia
-Adopt or Raise a Real Dragon.
+Raise a Real Dragon.
 
 Hello!
 
