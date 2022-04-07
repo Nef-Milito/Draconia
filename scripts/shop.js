@@ -33,20 +33,20 @@ class Dragon {
 //Add all the products to an Array.
 
 dragons.push(new Dragon(0, "ARID BADLANDS", "Bloodchaser", "Rare", 500, "../assets/images/Bloodchaser/Arid Badlands/Arid_Badlands_Overview.png", "../assets/images/Bloodchaser/Arid Badlands/Arid_Badlands_egg.png"));
-dragons.push(new Dragon(1, "FERROUS MOUNTAINS", "Bloodchaser", "Common", 100, "../assets/images/Bloodchaser/Ferrous Mountains/Ferrous_Mountains_Overview.png", "../assets/images/Bloodchaser/Ferrous Mountains/not_found.png"));
-dragons.push(new Dragon(2, "FJALNÄRRI MINES", "Nightsnagger", "Epic", 1000, "../assets/images/Nightsnagger/Fjalnarri Mines/Fjalnarri_Mines_Overview.png", "../assets/images/Nightsnagger/Fjalnarri Mines/not_found.png"));
+dragons.push(new Dragon(1, "FERROUS MOUNTAINS", "Bloodchaser", "Common", 100, "../assets/images/Bloodchaser/Ferrous Mountains/Ferrous_Mountains_Overview.png", "../assets/images/not_found.png"));
+dragons.push(new Dragon(2, "FJALNÄRRI MINES", "Nightsnagger", "Epic", 1000, "../assets/images/Nightsnagger/Fjalnarri Mines/Fjalnarri_Mines_Overview.png", "../assets/images/not_found.png"));
 dragons.push(new Dragon(3, "FORGOTTEN BOG", "Nightsnagger", "Rare", 500, "../assets/images/Nightsnagger/Forgotten Bog/Forgotten_Bog_Overview.png", "../assets/images/Nightsnagger/Forgotten Bog/Forgotten_Bog_Egg.png"));
-dragons.push(new Dragon(4, "FROZEN LAKE", "Ironwing", "Epic", 1000, "../assets/images/Ironwing/Frozen Lake/Frozen_Lake_Overview.png", "../assets/images/Ironwing/Frozen Lake/not_found.png"));
+dragons.push(new Dragon(4, "FROZEN LAKE", "Ironwing", "Epic", 1000, "../assets/images/Ironwing/Frozen Lake/Frozen_Lake_Overview.png", "../assets/images/not_found.png"));
 dragons.push(new Dragon(5, "HAERVAN CAVERNS", "Ironwing", "Epic", 1000, "../assets/images/Ironwing/Haervan Caverns/Haervan_Caverns_Overview.png", "../assets/images/Ironwing/Haervan Caverns/Haervan_Caverns_Egg.png"));
 dragons.push(new Dragon(6, "HELSTÖR", "Bloodchaser", "Legendary", 10000, "../assets/images/Bloodchaser/Helstor/Helstor_Overview.png", "../assets/images/Bloodchaser/Helstor/Helstor_Egg.png"));
 dragons.push(new Dragon(7, "LAEGAN CHASMS", "Nightsnagger", "Epic", 1000, "../assets/images/Nightsnagger/Laegan Chasms/Laegan_Chasms_Overview.png", "../assets/images/Nightsnagger/Laegan Chasms/Laegan_Chasms_Egg.png"));
 dragons.push(new Dragon(8, "OLMUND", "Ironwing", "Legendary", 10000, "../assets/images/Ironwing/Olmund/Olmund_Overview.png", "../assets/images/Ironwing/Olmund/Olmund_Egg.png"));
-dragons.push(new Dragon(9, "RAGING RIVER", "Bloodchaser", "Epic", 1000, "../assets/images/Bloodchaser/Raging River/Raging_River_Overview.png", "../assets/images/Bloodchaser/Raging River/not_found.png"));
+dragons.push(new Dragon(9, "RAGING RIVER", "Bloodchaser", "Epic", 1000, "../assets/images/Bloodchaser/Raging River/Raging_River_Overview.png", "../assets/images/not_found.png"));
 dragons.push(new Dragon(10, "RAYLESS DEPTHS", "Ironwing", "Rare", 500, "../assets/images/Ironwing/Rayless Depths/Rayless_Depths_Overview.png", "../assets/images/Ironwing/Rayless Depths/Rayless_Depths_Egg.png"));
-dragons.push(new Dragon(11, "SYGGIAN FRINGES", "Ironwing", "Epic", 1000, "../assets/images/Ironwing/Syggian Fringes/Syggian_Fringes_Overview.png", "../assets/images/Ironwing/Syggian Fringes/not_found.png"));
-dragons.push(new Dragon(12, "TORRUNI DUNES", "Nightsnagger", "Epic", 1000, "../assets/images/Nightsnagger/Torruni Dunes/Torruni_Dunes_Overview.png", "../assets/images/Nightsnagger/Torruni Dunes/not_found.png"));
-dragons.push(new Dragon(13, "VENFIR", "Nightsnagger", "Legendary", 1000, "../assets/images/Nightsnagger/Venfir/Venfir_Lingering_Dread_Overview.png", "../assets/images/Nightsnagger/Venfir/not_found.png"));
-dragons.push(new Dragon(14, "WARELM", "Bloodchaser", "Legendary", 1000, "../assets/images/Bloodchaser/Warelm/Warelm_Overview.png", "../assets/images/Bloodchaser/Warelm/not_found.png"));
+dragons.push(new Dragon(11, "SYGGIAN FRINGES", "Ironwing", "Epic", 1000, "../assets/images/Ironwing/Syggian Fringes/Syggian_Fringes_Overview.png", "../assets/images/not_found.png"));
+dragons.push(new Dragon(12, "TORRUNI DUNES", "Nightsnagger", "Epic", 1000, "../assets/images/Nightsnagger/Torruni Dunes/Torruni_Dunes_Overview.png", "../assets/images/not_found.png"));
+dragons.push(new Dragon(13, "VENFIR", "Nightsnagger", "Legendary", 1000, "../assets/images/Nightsnagger/Venfir/Venfir_Lingering_Dread_Overview.png", "../assets/images/not_found.png"));
+dragons.push(new Dragon(14, "WARELM", "Bloodchaser", "Legendary", 1000, "../assets/images/Bloodchaser/Warelm/Warelm_Overview.png", "../assets/images/not_found.png"));
 
 //List the products.
 
@@ -99,6 +99,17 @@ function checkLocalStorage() {
 function addDragon(dragonID) {
     let dragonChosen = dragons[dragonID];
     dragonChosen.addUnit();
+    setTimeout(() => {
+        Toastify({
+            text: "Dragon added!",
+            className: "toast",
+            duration: 5000,
+            stopOnFocus: true,
+            style: {
+                background: "linear-gradient(to right, #bce4a4, #23b685)",
+            }
+        }).showToast();
+    }, 500);
     updateSelection();
 }
 
@@ -107,6 +118,17 @@ function addDragon(dragonID) {
 function removeDragon(dragonID) {
     let dragonRemoved = dragons[dragonID];
     dragonRemoved.removeUnit();
+    setTimeout(() => {
+        Toastify({
+            text: "Dragon removed!",
+            className: "toast",
+            duration: 5000,
+            stopOnFocus: true,
+            style: {
+                background: "linear-gradient(to right, #fcd4a9, #ff787c)",
+            }
+        }).showToast();
+    }, 500);
     updateSelection();
 }
 
@@ -128,19 +150,27 @@ function createTable(array) {
     let table = document.createElement('div');
 
     table.innerHTML = `
-    <table id="cartTable" class="table">
-        <tbody id="tableBody">
-            <tr>
-                <td scope="col">Total: $${totalPrice}</td>
-                <td scope="col"></td>
-                <td scope="col"></td>
-                <td scope="col"></td>
-            </tr>
-            <tr>
-                <td><button id="clearSelection">Clear Cart</button></td>
-            </tr>
-        </tbody>
-    </table>
+    <div id="cartTable" class="table">
+        <ul id="tableBody">
+            <li class="table-header-footer">
+                <div class="col col-1">NAME</div>
+                <div class="col col-2">QUANTITY</div>
+                <div class="col col-3">PRICE</div>
+                <div class="col col-4"></div>
+            </li>
+        </ul>
+        <ul>
+            <li class="table-header-footer">
+                <div class="col col-1">Total</div>
+                <div class="col col-2"></div>
+                <div class="col col-3"></div>
+                <div class="col col-4">$${totalPrice}</div>
+            </li>
+        </ul>
+        <ul>
+            <li><button id="clearSelection">Clear Cart</button></li>
+        </ul>
+    </div>
     `
     tableContainer.appendChild(table);
 
@@ -148,15 +178,13 @@ function createTable(array) {
 
     for (let dragon of array) {
         if (dragon.quantity > 0) {
-            let data = document.createElement('div');
+            let data = document.createElement('li');
+            data.className = 'tableRow';
             data.innerHTML = `
-            <tr>
-                <th scope="row"></th>
-                <td scope="col">${dragon.name}</td>
-                <td scope="col">${dragon.quantity}</td>
-                <td scope="col">${dragon.totalPrice}</td>
-                <td scope="col"><button id="remove${dragon.id}" type="button"></button></td>
-            </tr>
+            <div class="col col-1">${dragon.name}</div>
+            <div class="col col-2">${dragon.quantity}</div>
+            <div class="col col-3">${dragon.totalPrice}</div>
+            <div class="col col-4"><button id="remove${dragon.id}" class="removeBtn" type="button">Remove</button></div>
             `
 
             tableBody.appendChild(data);
@@ -172,6 +200,18 @@ function createTable(array) {
                     dragon.quantity = 0;
                     dragon.totalPrice = 0;
                 }
+
+                setTimeout(() => {
+                    Toastify({
+                        text: "All Dragons removed!",
+                        className: "toast",
+                        duration: 5000,
+                        stopOnFocus: true,
+                        style: {
+                            background: "linear-gradient(to right, #fcd4a9, #ff787c)",
+                        }
+                    }).showToast();
+                }, 500);
 
                 updateSelection();
             }

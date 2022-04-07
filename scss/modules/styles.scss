@@ -463,6 +463,69 @@ html {
             transform: rotateY(180deg);
         }
     }
+
+    #cart {
+        #cartTable {
+            width: 1000px;
+            margin: 0 auto 0 auto;
+            padding: 0 10px 0 10px;
+
+            ul {
+                li {
+                    border-radius: 3px;
+                    padding: 25px 30px;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 25px;
+                    align-items: center;
+
+                    .removeBtn {
+                        border: none;
+                        padding: 10px 20px;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+
+                    .removeBtn:hover {
+                        background-color: #9ea6a6;
+                    }
+                }
+
+                .table-header-footer {
+                    background-color: #95A5A6;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.03em;
+                    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+                }
+
+                .tableRow {
+                    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+                }
+
+                .col-1 {
+                    flex-basis: 30%;
+                }
+
+                .col-2 {
+                    flex-basis: 30%;
+                }
+
+                .col-3 {
+                    flex-basis: 30%;
+                }
+
+                .col-4 {
+                    flex-basis: 10%;
+                }
+            }
+        }
+    }
+}
+
+.toast {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
 }
 
 /*About*/
@@ -664,6 +727,8 @@ html {
 
 /*Sign In*/
 #signin {
+    background-color: #efefef;
+
     #login-form {
         padding: 220px 0 150px;
 
@@ -737,7 +802,8 @@ html {
                     font-size: 24px;
                     padding: 20px;
                     margin: 0px 10px;
-                    width: 300px;
+                    width: 280px;
+                    background-color: #abaaaa;
                 }
 
                 input:hover {
@@ -792,11 +858,12 @@ html {
                 margin-top: 40px;
 
                 #register {
+                    background-color: #abaaaa;
                     border: none;
                     font-size: 24px;
                     padding: 20px;
                     margin: 0px 10px;
-                    width: 300px;
+                    width: 280px;
                 }
 
                 #register:hover {

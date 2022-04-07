@@ -342,6 +342,44 @@ html {
           backface-visibility: hidden; }
     #shop section .card:hover .card-inner {
       transform: rotateY(180deg); }
+  #shop #cart #cartTable {
+    width: 1000px;
+    margin: 0 auto 0 auto;
+    padding: 0 10px 0 10px; }
+    #shop #cart #cartTable ul li {
+      border-radius: 3px;
+      padding: 25px 30px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 25px;
+      align-items: center; }
+      #shop #cart #cartTable ul li .removeBtn {
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer; }
+      #shop #cart #cartTable ul li .removeBtn:hover {
+        background-color: #9ea6a6; }
+    #shop #cart #cartTable ul .table-header-footer {
+      background-color: #95A5A6;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1); }
+    #shop #cart #cartTable ul .tableRow {
+      box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1); }
+    #shop #cart #cartTable ul .col-1 {
+      flex-basis: 30%; }
+    #shop #cart #cartTable ul .col-2 {
+      flex-basis: 30%; }
+    #shop #cart #cartTable ul .col-3 {
+      flex-basis: 30%; }
+    #shop #cart #cartTable ul .col-4 {
+      flex-basis: 10%; }
+
+.toast {
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif; }
 
 /*About*/
 #about .section1 {
@@ -478,102 +516,105 @@ html {
           cursor: pointer; }
 
 /*Sign In*/
-#signin #login-form {
-  padding: 220px 0 150px; }
-  #signin #login-form #login {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    text-align: center; }
-    #signin #login-form #login fieldset {
-      opacity: 98%;
-      border: none;
-      background-image: linear-gradient(#d7dbe4, #d4b05a);
-      width: 400px;
-      height: 300px;
-      padding: 20px 40px;
-      border-radius: 10px; }
-      #signin #login-form #login fieldset aside {
-        position: absolute;
-        z-index: 2;
-        right: 35.5%; }
-        #signin #login-form #login fieldset aside a img {
-          width: 30px; }
-        #signin #login-form #login fieldset aside img:hover {
-          animation-name: spin;
-          animation-duration: 5000ms;
-          animation-iteration-count: infinite;
-          animation-timing-function: linear; }
-      #signin #login-form #login fieldset div {
-        margin: 50px 0; }
-        #signin #login-form #login fieldset div label {
-          font-family: 'Poppins', sans-serif;
-          font-size: 24px; }
-        #signin #login-form #login fieldset div input {
-          width: 95%;
-          border-radius: 0px;
-          padding: 10px;
-          height: 20px;
-          border: none; }
-    #signin #login-form #login .checkbox {
-      margin: 10px 0px 50px; }
-      #signin #login-form #login .checkbox p {
-        display: inline;
-        margin: 0px 10px;
-        font-family: 'Poppins', sans-serif;
-        font-size: 20px; }
-    #signin #login-form #login .buttons {
-      margin-top: -20px;
-      display: inline; }
-      #signin #login-form #login .buttons input {
+#signin {
+  background-color: #efefef; }
+  #signin #login-form {
+    padding: 220px 0 150px; }
+    #signin #login-form #login {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      text-align: center; }
+      #signin #login-form #login fieldset {
+        opacity: 98%;
         border: none;
-        font-size: 24px;
-        padding: 20px;
-        margin: 0px 10px;
-        width: 300px; }
-      #signin #login-form #login .buttons input:hover {
-        background-color: #e0bb60;
-        cursor: pointer; }
-
-#signin #signUp-form {
-  padding: 220px 0 150px; }
-  #signin #signUp-form #createAccount {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    text-align: center; }
-    #signin #signUp-form #createAccount fieldset {
-      opacity: 98%;
-      border: none;
-      background-image: linear-gradient(#d7dbe4, #d4b05a);
-      width: 400px;
-      height: 820px;
-      padding: 20px 40px;
-      border-radius: 10px; }
-      #signin #signUp-form #createAccount fieldset div {
-        margin: 50px 0; }
-        #signin #signUp-form #createAccount fieldset div label {
+        background-image: linear-gradient(#d7dbe4, #d4b05a);
+        width: 400px;
+        height: 300px;
+        padding: 20px 40px;
+        border-radius: 10px; }
+        #signin #login-form #login fieldset aside {
+          position: absolute;
+          z-index: 2;
+          right: 35.5%; }
+          #signin #login-form #login fieldset aside a img {
+            width: 30px; }
+          #signin #login-form #login fieldset aside img:hover {
+            animation-name: spin;
+            animation-duration: 5000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear; }
+        #signin #login-form #login fieldset div {
+          margin: 50px 0; }
+          #signin #login-form #login fieldset div label {
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px; }
+          #signin #login-form #login fieldset div input {
+            width: 95%;
+            border-radius: 0px;
+            padding: 10px;
+            height: 20px;
+            border: none; }
+      #signin #login-form #login .checkbox {
+        margin: 10px 0px 50px; }
+        #signin #login-form #login .checkbox p {
+          display: inline;
+          margin: 0px 10px;
           font-family: 'Poppins', sans-serif;
-          font-size: 24px; }
-        #signin #signUp-form #createAccount fieldset div input {
-          width: 95%;
-          border-radius: 0px;
-          padding: 10px;
-          height: 20px;
-          border: none; }
-        #signin #signUp-form #createAccount fieldset div p {
-          font-size: 18px; }
-    #signin #signUp-form #createAccount div {
-      margin-top: 40px; }
-      #signin #signUp-form #createAccount div #register {
+          font-size: 20px; }
+      #signin #login-form #login .buttons {
+        margin-top: -20px;
+        display: inline; }
+        #signin #login-form #login .buttons input {
+          border: none;
+          font-size: 24px;
+          padding: 20px;
+          margin: 0px 10px;
+          width: 280px;
+          background-color: #abaaaa; }
+        #signin #login-form #login .buttons input:hover {
+          background-color: #e0bb60;
+          cursor: pointer; }
+  #signin #signUp-form {
+    padding: 220px 0 150px; }
+    #signin #signUp-form #createAccount {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      text-align: center; }
+      #signin #signUp-form #createAccount fieldset {
+        opacity: 98%;
         border: none;
-        font-size: 24px;
-        padding: 20px;
-        margin: 0px 10px;
-        width: 300px; }
-      #signin #signUp-form #createAccount div #register:hover {
-        background-color: #e0bb60;
-        cursor: pointer; }
+        background-image: linear-gradient(#d7dbe4, #d4b05a);
+        width: 400px;
+        height: 820px;
+        padding: 20px 40px;
+        border-radius: 10px; }
+        #signin #signUp-form #createAccount fieldset div {
+          margin: 50px 0; }
+          #signin #signUp-form #createAccount fieldset div label {
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px; }
+          #signin #signUp-form #createAccount fieldset div input {
+            width: 95%;
+            border-radius: 0px;
+            padding: 10px;
+            height: 20px;
+            border: none; }
+          #signin #signUp-form #createAccount fieldset div p {
+            font-size: 18px; }
+      #signin #signUp-form #createAccount div {
+        margin-top: 40px; }
+        #signin #signUp-form #createAccount div #register {
+          background-color: #abaaaa;
+          border: none;
+          font-size: 24px;
+          padding: 20px;
+          margin: 0px 10px;
+          width: 280px; }
+        #signin #signUp-form #createAccount div #register:hover {
+          background-color: #e0bb60;
+          cursor: pointer; }
 
 /*****FOOTER*****/
 footer {
