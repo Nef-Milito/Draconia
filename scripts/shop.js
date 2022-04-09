@@ -99,6 +99,7 @@ function checkLocalStorage() {
 function addDragon(dragonID) {
     let dragonChosen = dragons[dragonID];
     dragonChosen.addUnit();
+    updateSelection();
     setTimeout(() => {
         Toastify({
             text: "Dragon added!",
@@ -110,7 +111,6 @@ function addDragon(dragonID) {
             }
         }).showToast();
     }, 500);
-    updateSelection();
 }
 
 //Remove a Dragon from the cart.
@@ -118,6 +118,7 @@ function addDragon(dragonID) {
 function removeDragon(dragonID) {
     let dragonRemoved = dragons[dragonID];
     dragonRemoved.removeUnit();
+    updateSelection();
     setTimeout(() => {
         Toastify({
             text: "Dragon removed!",
@@ -129,7 +130,6 @@ function removeDragon(dragonID) {
             }
         }).showToast();
     }, 500);
-    updateSelection();
 }
 
 //Update the selection table.
@@ -201,6 +201,8 @@ function createTable(array) {
                     dragon.totalPrice = 0;
                 }
 
+                updateSelection();
+
                 setTimeout(() => {
                     Toastify({
                         text: "All Dragons removed!",
@@ -212,8 +214,6 @@ function createTable(array) {
                         }
                     }).showToast();
                 }, 500);
-
-                updateSelection();
             }
         }
     }
