@@ -151,7 +151,7 @@ function createTable(array) {
     let totalQuantity = getTotalQuantity(dragons);
 
     let display_number = document.createElement('div');
-    display_number.innerHTML = `${totalQuantity}`;
+    display_number.innerHTML = `<div>${totalQuantity}</div>`;
 
     let table = document.createElement('div');
 
