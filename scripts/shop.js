@@ -172,7 +172,7 @@ function createTable(array) {
             <li>
                 <div><button id="clearSelection">Clear Cart</button></div>
                 <div></div>
-                <div>Elements:</div>
+                <div></div>
                 <div>${totalQuantity}</div>
             </li>
         </ul>
@@ -190,7 +190,7 @@ function createTable(array) {
             <div class="col col-1">${dragon.name}</div>
             <div class="col col-2">${dragon.quantity}</div>
             <div class="col col-3">${dragon.totalPrice}</div>
-            <div class="col col-4"><button id="remove${dragon.id}" class="removeBtn" type="button">Remove</button></div>
+            <div class="col col-4"><button id="remove${dragon.id}" class="removeBtn" type="button"><img src="../assets/vectors/remove_white.svg"></button></div>
             `
 
             tableBody.appendChild(data);
