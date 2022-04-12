@@ -146,6 +146,7 @@ function createTable(array) {
     tableContainer.innerHTML = "";
 
     let totalPrice = getTotalPrice(dragons);
+    let totalQuantity = getTotalQuantity(dragons);
 
     let table = document.createElement('div');
 
@@ -168,7 +169,12 @@ function createTable(array) {
             </li>
         </ul>
         <ul>
-            <li><button id="clearSelection">Clear Cart</button></li>
+            <li>
+                <div><button id="clearSelection">Clear Cart</button></div>
+                <div></div>
+                <div>Elements:</div>
+                <div>${totalQuantity}</div>
+            </li>
         </ul>
     </div>
     `
@@ -229,6 +235,18 @@ function getTotalPrice() {
     }
 
     return totalPrice;
+}
+
+//Get the total number of Dragons in the cart.
+
+function getTotalQuantity() {
+    let totalQuantity = 0;
+
+    for (const dragon of dragons) {
+        totalQuantity += dragon.quantity;
+    }
+
+    return totalQuantity;
 }
 
 checkLocalStorage();
