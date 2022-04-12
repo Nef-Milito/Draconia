@@ -142,11 +142,16 @@ function updateSelection() {
 //Print the table on the HTML.
 
 function createTable(array) {
+    let cartQ = document.getElementById('number-container');
+    cartQ.innerHTML = "";
     let tableContainer = document.getElementById('cart');
     tableContainer.innerHTML = "";
 
     let totalPrice = getTotalPrice(dragons);
     let totalQuantity = getTotalQuantity(dragons);
+
+    let display_number = document.createElement('div');
+    display_number.innerHTML = `${totalQuantity}`;
 
     let table = document.createElement('div');
 
@@ -171,14 +176,13 @@ function createTable(array) {
         <ul>
             <li>
                 <div><button id="clearSelection">Clear Cart</button></div>
-                <div></div>
-                <div></div>
-                <div>${totalQuantity}</div>
             </li>
         </ul>
     </div>
     `
     tableContainer.appendChild(table);
+    cartQ.appendChild(display_number);
+
 
     let tableBody = document.getElementById('tableBody');
 

@@ -312,6 +312,40 @@ html {
 #shop {
     padding: 80px 30px;
 
+    aside {
+        position: absolute;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.775);
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        z-index: 2;
+        top: 20%;
+        position: fixed;
+        right: 0%;
+        cursor: pointer;
+
+        img {
+            width: 50px;
+        }
+
+        #number-container {
+            position: absolute;
+            background-color: rgb(241, 37, 37);
+            z-index: 3;
+            border-radius: 100%;
+            padding: 0px 6px;
+            top: 50%;
+            right: 15%;
+            font-size: 14px;
+            font-family: 'Lemonada', sans-serif;
+            font-weight: 700;
+        }
+    }
+
+    aside:hover {
+        background-color: #000;
+    }
+
     #shopTitle {
         padding-bottom: 20px;
         text-align: center;
