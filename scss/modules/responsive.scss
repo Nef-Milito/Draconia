@@ -1,0 +1,531 @@
+@media (min-width: 2560px) {
+
+    /*****HEADER*****/
+    .headerBG {
+        background-size: contain;
+        padding-bottom: 1300px;
+    }
+
+    .headerBG-about {
+        background-size: contain;
+        padding-bottom: 1300px;
+    }
+
+    #globalHeader {
+        .header-container {
+            .logo img {
+                width: 150px;
+            }
+
+            .navigation ul li {
+                font-size: 52px;
+            }
+
+            .header-vectors {
+                .location img {
+                    width: 80px;
+                    height: 80px;
+                }
+    
+                .account img {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+        }
+
+        .indexButton {
+            a {
+                top: 60%;
+                width: fit-content;
+
+                button {
+                    font-size: 62px;
+                }
+            }
+        }
+
+        .title h1 {
+            top: 45%;
+            font-size: 118px;
+        }
+
+        .title h1:after {
+            width: 850px;
+        }
+    }
+
+    /*Homepage*/
+    #content {
+        article {
+            h1 {
+                font-size: 72px;
+            }
+
+            p {
+                font-size: 30px;
+            }
+        }
+
+        .info-container {
+            div {
+                h2 {
+                    font-size: 72px;
+                }
+
+                p {
+                    width: 1700px;
+                    font-size: 30px;
+                }
+
+                button {
+                    font-size: 48px;
+                }
+                
+                img {
+                    width: 500px;
+                }
+            }
+        }
+
+        .info1-container {
+            div {
+                h2 {
+                    font-size: 72px;
+                }
+
+                p {
+                    width: 1700px;
+                    font-size: 30px;
+
+                    a {
+                        font-size: inherit;
+                    }
+                }
+
+                button {
+                    font-size: 48px;
+                }
+
+                img {
+                    width: 500px;
+                }
+            }
+        }
+
+        .info2-container {
+            div {
+                h2 {
+                    font-size: 72px;
+                }
+
+                p {
+                    width: 1700px;
+                    font-size: 30px;
+                }
+
+                img {
+                    width: 500px;
+                }
+            }
+        }
+    }
+
+    /*About*/
+    #about {
+        .section1 {
+            margin: 120px 0px;
+
+            .information div {
+                h2 {
+                    font-size: 72px;
+                }
+
+                p {
+                    width: 1300px;
+                    font-size: 42px;
+                }
+
+                img {
+                    width: 900px;
+                }
+            }
+
+            .visionAndMission {
+                margin: 200px 30px;
+
+                .VAMimg img {
+                    width: 500px;
+                }
+
+                h2 {
+                    font-size: 56px;
+                }
+
+                p {
+                    width: 800px;
+                    font-size: 36px;
+                }
+            }
+        }
+
+        .section2 {
+            article {
+                .adopt {
+                    h3 {
+                        font-size: 52px;
+                    }
+
+                    p {
+                        width: 1000px;
+                        font-size: 36px;
+                    }
+
+                    img {
+                        width: 900px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*Contact*/
+    #contact {
+        h1 {
+            padding-top: 280px;
+            font-size: 102px;
+        }
+
+        .formulary {
+            fieldset {
+                width: 1200px;
+
+                div {
+                    label {
+                        font-size: 52px;
+                    }
+
+                    input {
+                        font-size: 48px;
+                        padding: 20px;
+                        height: 50px;
+                    }
+
+                    textarea {
+                        font-size: 48px;
+                        padding: 20px;
+                        height: 400px;
+                    }
+                }
+            }
+
+            div {
+                margin: 80px;
+
+                .checkbox {
+                    .field {
+                        width: 50px;
+                        height: 50px;
+                    }
+
+                    label {
+                        font-size: 48px;
+                    }
+                }
+
+                .buttons {
+                    margin: 0px;
+
+                    input {
+                        width: 600px;
+                        margin: 0px 20px;
+                        font-size: 62px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*****FOOTER*****/
+    footer {
+        section {
+            .copyright p {
+                font-size: 28px;
+            }
+
+            .social img {
+                width: 80px;
+            }
+
+            .policies ul li a {
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 2559px) {
+
+    /*****HEADER*****/
+    .headerBG {
+        background-size: contain;
+        padding-bottom: 1000px;
+    }
+    
+    .headerBG-about {
+        background-size: contain;
+        padding-bottom: 1000px;
+    }
+
+    #globalHeader {
+        .header-container {
+            .logo img {
+                width: 100px;
+            }
+
+            .navigation ul li {
+                font-size: 36px;
+            }
+
+            .header-vectors {
+                .location img {
+                    width: 65px;
+                    height: 65px;
+                }
+    
+                .account img {
+                    width: 65px;
+                    height: 65px;
+                }
+            }
+        }
+
+        .indexButton {
+            a {
+                top: 60%;
+                width: fit-content;
+
+                button {
+                    font-size: 42px;
+                }
+            }
+        }
+
+        .title h1 {
+            top: 45%;
+            font-size: 90px;
+        }
+
+        .title h1:after {
+            width: 650px;
+        }
+    }
+
+    /*Homepage*/
+    #content {
+        article {
+            h1 {
+                font-size: 56px;
+            }
+
+            p {
+                font-size: 24px;
+            }
+        }
+
+        .info-container {
+            div {
+                h2 {
+                    font-size: 56px;
+                }
+
+                p {
+                    width: 1200px;
+                    font-size: 24px;
+                }
+
+                button {
+                    font-size: 32px;
+                }
+
+                img {
+                    width: 400px;
+                }
+            }
+        }
+
+        .info1-container {
+            div {
+                h2 {
+                    font-size: 56px;
+                }
+
+                p {
+                    width: 1200px;
+                    font-size: 24px;
+
+                    a {
+                        font-size: inherit;
+                    }
+                }
+
+                button {
+                    font-size: 32px;
+                }
+
+                img {
+                    width: 400px;
+                }
+            }
+        }
+
+        .info2-container {
+            div {
+                h2 {
+                    font-size: 56px;
+                }
+
+                p {
+                    width: 1200px;
+                    font-size: 24px;
+                }
+
+                img {
+                    width: 400px;
+                }
+            }
+        }
+    }
+
+    /*About*/
+    #about {
+        .section1 {
+            .information div {
+                p {
+                    width: 800px;
+                    font-size: 24px;
+                }
+            }
+
+            .visionAndMission {
+                .VAMimg img {
+                    width: 400px;
+                }
+
+                h2 {
+                    font-size: 42px;
+                }
+
+                p {
+                    width: 600px;
+                    font-size: 22px;
+                }
+            }
+        }
+
+        .section2 {
+            article {
+                .adopt {
+                    h3 {
+                        font-size: 38px;
+                    }
+
+                    p {
+                        width: 750px;
+                        font-size: 24px;
+                    }
+
+                    img {
+                        width: 600px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*Contact*/
+    #contact {
+        h1 {
+            padding-top: 220px;
+            font-size: 72px;
+        }
+
+        .formulary {
+            fieldset {
+                width: 900px;
+
+                div {
+                    label {
+                        font-size: 42px;
+                    }
+
+                    input {
+                        font-size: 38px;
+                        padding: 15px;
+                        height: 40px;
+                    }
+
+                    textarea {
+                        font-size: 38px;
+                        padding: 15px;
+                        height: 300px;
+                    }
+                }
+            }
+
+            div {
+                margin: 70px;
+
+                .checkbox {
+                    .field {
+                        width: 40px;
+                        height: 40px;
+                    }
+
+                    label {
+                        font-size: 38px;
+                    }
+                }
+
+                .buttons {
+                    margin: 0px;
+
+                    input {
+                        width: 460px;
+                        margin: 0px 20px;
+                        font-size: 52px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*****FOOTER*****/
+    footer {
+        section {
+            .copyright p {
+                font-size: 24px;
+            }
+
+            .social img {
+                width: 65px;
+            }
+
+            .policies ul li a {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 600px) {}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 320px) {}

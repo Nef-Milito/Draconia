@@ -238,36 +238,101 @@ html {
 /*Dragons*/
 #shop {
   padding: 80px 30px; }
+  #shop .position-initial {
+    transition: 0.5s;
+    right: -1070px;
+    position: fixed; }
+  #shop .position-translated {
+    position: fixed;
+    transition: 0.5s;
+    right: 0%; }
   #shop aside {
-    position: absolute;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.775);
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    z-index: 2;
+    z-index: 1;
     top: 20%;
     position: fixed;
-    right: 0%;
-    cursor: pointer; }
-    #shop aside img {
-      width: 50px; }
-    #shop aside #number-container {
-      position: absolute;
-      background-color: #f12525;
-      z-index: 3;
-      width: 10%;
-      border-radius: 100%;
-      padding: 0px 10px;
-      top: 50%;
-      right: 15%;
-      display: flex;
-      justify-content: center; }
-      #shop aside #number-container div {
-        font-size: 14px;
-        font-family: 'Lemonada', sans-serif;
-        font-weight: 700; }
-  #shop aside:hover {
-    background-color: #000; }
+    display: grid;
+    grid-template-areas: "cart-toggle table-container"; }
+    #shop aside #cart-toggle {
+      background-color: rgba(0, 0, 0, 0.775);
+      padding: 20px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      cursor: pointer;
+      height: 50px; }
+      #shop aside #cart-toggle .cart-icon img {
+        width: 50px; }
+      #shop aside #cart-toggle #number-container {
+        position: relative;
+        background-color: #f12525;
+        z-index: 2;
+        width: 15%;
+        border-radius: 100%;
+        padding: 0px 10px;
+        top: -50%;
+        right: -60%;
+        display: flex;
+        justify-content: center; }
+        #shop aside #cart-toggle #number-container div {
+          font-size: 14px;
+          font-family: 'Lemonada', sans-serif;
+          font-weight: 700; }
+    #shop aside .table-container {
+      height: 580px;
+      overflow-y: scroll;
+      background-color: #0b202b;
+      z-index: 1;
+      position: relative;
+      border-bottom-left-radius: 20px; }
+      #shop aside .table-container #cart {
+        padding: 30px 30px 0px 0px;
+        z-index: 2; }
+        #shop aside .table-container #cart #cartTable {
+          width: 1000px;
+          margin: 0 auto 0 auto;
+          padding: 10px 10px 0 10px; }
+          #shop aside .table-container #cart #cartTable ul li {
+            border-radius: 3px;
+            padding: 25px 30px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            align-items: center; }
+            #shop aside .table-container #cart #cartTable ul li .removeBtn {
+              border: none;
+              padding: 8px 8px;
+              border-radius: 5px;
+              cursor: pointer;
+              background-color: rgba(227, 73, 73, 0.718); }
+              #shop aside .table-container #cart #cartTable ul li .removeBtn img {
+                width: 15px; }
+            #shop aside .table-container #cart #cartTable ul li .removeBtn:hover {
+              background-color: rgba(241, 37, 37, 0.901); }
+            #shop aside .table-container #cart #cartTable ul li div #clearSelection {
+              border: none;
+              width: fit-content;
+              border-radius: 10px;
+              padding: 10px 20px;
+              cursor: pointer;
+              font-size: 24px; }
+          #shop aside .table-container #cart #cartTable ul .table-header-footer {
+            background-color: #95A5A6;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1); }
+          #shop aside .table-container #cart #cartTable ul .tableRow {
+            background-color: #efefef;
+            box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1); }
+          #shop aside .table-container #cart #cartTable ul .col-1 {
+            flex-basis: 30%; }
+          #shop aside .table-container #cart #cartTable ul .col-2 {
+            flex-basis: 30%; }
+          #shop aside .table-container #cart #cartTable ul .col-3 {
+            flex-basis: 30%; }
+          #shop aside .table-container #cart #cartTable ul .col-4 {
+            flex-basis: 10%; }
+  #shop aside:hover #cart-toggle {
+    background-color: #0b202b; }
   #shop #shopTitle {
     padding-bottom: 20px;
     text-align: center;
@@ -372,43 +437,6 @@ html {
           backface-visibility: hidden; }
     #shop section .card:hover .card-inner {
       transform: rotateY(180deg); }
-  #shop #cart #cartTable {
-    width: 1000px;
-    margin: 0 auto 0 auto;
-    padding: 0 10px 0 10px; }
-    #shop #cart #cartTable ul li {
-      border-radius: 3px;
-      padding: 25px 30px;
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 25px;
-      align-items: center; }
-      #shop #cart #cartTable ul li .removeBtn {
-        border: none;
-        padding: 8px 8px;
-        border-radius: 5px;
-        cursor: pointer;
-        background-color: rgba(227, 73, 73, 0.718); }
-        #shop #cart #cartTable ul li .removeBtn img {
-          width: 15px; }
-      #shop #cart #cartTable ul li .removeBtn:hover {
-        background-color: rgba(241, 37, 37, 0.901); }
-    #shop #cart #cartTable ul .table-header-footer {
-      background-color: #95A5A6;
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 0.03em;
-      box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1); }
-    #shop #cart #cartTable ul .tableRow {
-      box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1); }
-    #shop #cart #cartTable ul .col-1 {
-      flex-basis: 30%; }
-    #shop #cart #cartTable ul .col-2 {
-      flex-basis: 30%; }
-    #shop #cart #cartTable ul .col-3 {
-      flex-basis: 30%; }
-    #shop #cart #cartTable ul .col-4 {
-      flex-basis: 10%; }
 
 .toast {
   font-size: 24px;
@@ -532,7 +560,10 @@ html {
       #contact .formulary div .checkbox {
         display: flex;
         flex-flow: row; }
-        #contact .formulary div .checkbox p {
+        #contact .formulary div .checkbox .field {
+          width: 20px;
+          height: 20px; }
+        #contact .formulary div .checkbox label {
           font-size: 20px;
           margin: 10px; }
       #contact .formulary div .buttons {
@@ -590,7 +621,7 @@ html {
             border: none; }
       #signin #login-form #login .checkbox {
         margin: 10px 0px 50px; }
-        #signin #login-form #login .checkbox p {
+        #signin #login-form #login .checkbox label {
           display: inline;
           margin: 0px 10px;
           font-family: 'Poppins', sans-serif;
@@ -619,8 +650,8 @@ html {
         opacity: 98%;
         border: none;
         background-image: linear-gradient(#d7dbe4, #d4b05a);
-        width: 400px;
-        height: 820px;
+        width: 520px;
+        height: 700px;
         padding: 20px 40px;
         border-radius: 10px; }
         #signin #signUp-form #createAccount fieldset div {
@@ -636,16 +667,23 @@ html {
             border: none; }
           #signin #signUp-form #createAccount fieldset div p {
             font-size: 18px; }
+      #signin #signUp-form #createAccount .checkbox {
+        margin: 50px 0px 10px; }
+        #signin #signUp-form #createAccount .checkbox label {
+          display: inline;
+          margin: 0px 10px;
+          font-family: 'Poppins', sans-serif;
+          font-size: 20px; }
       #signin #signUp-form #createAccount div {
         margin-top: 40px; }
-        #signin #signUp-form #createAccount div #register {
+        #signin #signUp-form #createAccount div #register-btn {
           background-color: #abaaaa;
           border: none;
           font-size: 24px;
           padding: 20px;
           margin: 0px 10px;
           width: 280px; }
-        #signin #signUp-form #createAccount div #register:hover {
+        #signin #signUp-form #createAccount div #register-btn:hover {
           background-color: #e0bb60;
           cursor: pointer; }
 
@@ -682,3 +720,240 @@ footer {
           color: #efc864; }
 
 /* Responsive Design --> */
+@media (min-width: 2560px) {
+  /*****HEADER*****/
+  .headerBG {
+    background-size: contain;
+    padding-bottom: 1300px; }
+  .headerBG-about {
+    background-size: contain;
+    padding-bottom: 1300px; }
+  #globalHeader .header-container .logo img {
+    width: 150px; }
+  #globalHeader .header-container .navigation ul li {
+    font-size: 52px; }
+  #globalHeader .header-container .header-vectors .location img {
+    width: 80px;
+    height: 80px; }
+  #globalHeader .header-container .header-vectors .account img {
+    width: 80px;
+    height: 80px; }
+  #globalHeader .indexButton a {
+    top: 60%;
+    width: fit-content; }
+    #globalHeader .indexButton a button {
+      font-size: 62px; }
+  #globalHeader .title h1 {
+    top: 45%;
+    font-size: 118px; }
+  #globalHeader .title h1:after {
+    width: 850px; }
+  /*Homepage*/
+  #content article h1 {
+    font-size: 72px; }
+  #content article p {
+    font-size: 30px; }
+  #content .info-container div h2 {
+    font-size: 72px; }
+  #content .info-container div p {
+    width: 1700px;
+    font-size: 30px; }
+  #content .info-container div button {
+    font-size: 48px; }
+  #content .info-container div img {
+    width: 500px; }
+  #content .info1-container div h2 {
+    font-size: 72px; }
+  #content .info1-container div p {
+    width: 1700px;
+    font-size: 30px; }
+    #content .info1-container div p a {
+      font-size: inherit; }
+  #content .info1-container div button {
+    font-size: 48px; }
+  #content .info1-container div img {
+    width: 500px; }
+  #content .info2-container div h2 {
+    font-size: 72px; }
+  #content .info2-container div p {
+    width: 1700px;
+    font-size: 30px; }
+  #content .info2-container div img {
+    width: 500px; }
+  /*About*/
+  #about .section1 {
+    margin: 120px 0px; }
+    #about .section1 .information div h2 {
+      font-size: 72px; }
+    #about .section1 .information div p {
+      width: 1300px;
+      font-size: 42px; }
+    #about .section1 .information div img {
+      width: 900px; }
+    #about .section1 .visionAndMission {
+      margin: 200px 30px; }
+      #about .section1 .visionAndMission .VAMimg img {
+        width: 500px; }
+      #about .section1 .visionAndMission h2 {
+        font-size: 56px; }
+      #about .section1 .visionAndMission p {
+        width: 800px;
+        font-size: 36px; }
+  #about .section2 article .adopt h3 {
+    font-size: 52px; }
+  #about .section2 article .adopt p {
+    width: 1000px;
+    font-size: 36px; }
+  #about .section2 article .adopt img {
+    width: 900px; }
+  /*Contact*/
+  #contact h1 {
+    padding-top: 280px;
+    font-size: 102px; }
+  #contact .formulary fieldset {
+    width: 1200px; }
+    #contact .formulary fieldset div label {
+      font-size: 52px; }
+    #contact .formulary fieldset div input {
+      font-size: 48px;
+      padding: 20px;
+      height: 50px; }
+    #contact .formulary fieldset div textarea {
+      font-size: 48px;
+      padding: 20px;
+      height: 400px; }
+  #contact .formulary div {
+    margin: 80px; }
+    #contact .formulary div .checkbox .field {
+      width: 50px;
+      height: 50px; }
+    #contact .formulary div .checkbox label {
+      font-size: 48px; }
+    #contact .formulary div .buttons {
+      margin: 0px; }
+      #contact .formulary div .buttons input {
+        width: 600px;
+        margin: 0px 20px;
+        font-size: 62px; }
+  /*****FOOTER*****/
+  footer section .copyright p {
+    font-size: 28px; }
+  footer section .social img {
+    width: 80px; }
+  footer section .policies ul li a {
+    font-size: 28px; } }
+
+@media (min-width: 1920px) and (max-width: 2559px) {
+  /*****HEADER*****/
+  .headerBG {
+    background-size: contain;
+    padding-bottom: 1000px; }
+  .headerBG-about {
+    background-size: contain;
+    padding-bottom: 1000px; }
+  #globalHeader .header-container .logo img {
+    width: 100px; }
+  #globalHeader .header-container .navigation ul li {
+    font-size: 36px; }
+  #globalHeader .header-container .header-vectors .location img {
+    width: 65px;
+    height: 65px; }
+  #globalHeader .header-container .header-vectors .account img {
+    width: 65px;
+    height: 65px; }
+  #globalHeader .indexButton a {
+    top: 60%;
+    width: fit-content; }
+    #globalHeader .indexButton a button {
+      font-size: 42px; }
+  #globalHeader .title h1 {
+    top: 45%;
+    font-size: 90px; }
+  #globalHeader .title h1:after {
+    width: 650px; }
+  /*Homepage*/
+  #content article h1 {
+    font-size: 56px; }
+  #content article p {
+    font-size: 24px; }
+  #content .info-container div h2 {
+    font-size: 56px; }
+  #content .info-container div p {
+    width: 1200px;
+    font-size: 24px; }
+  #content .info-container div button {
+    font-size: 32px; }
+  #content .info-container div img {
+    width: 400px; }
+  #content .info1-container div h2 {
+    font-size: 56px; }
+  #content .info1-container div p {
+    width: 1200px;
+    font-size: 24px; }
+    #content .info1-container div p a {
+      font-size: inherit; }
+  #content .info1-container div button {
+    font-size: 32px; }
+  #content .info1-container div img {
+    width: 400px; }
+  #content .info2-container div h2 {
+    font-size: 56px; }
+  #content .info2-container div p {
+    width: 1200px;
+    font-size: 24px; }
+  #content .info2-container div img {
+    width: 400px; }
+  /*About*/
+  #about .section1 .information div p {
+    width: 800px;
+    font-size: 24px; }
+  #about .section1 .visionAndMission .VAMimg img {
+    width: 400px; }
+  #about .section1 .visionAndMission h2 {
+    font-size: 42px; }
+  #about .section1 .visionAndMission p {
+    width: 600px;
+    font-size: 22px; }
+  #about .section2 article .adopt h3 {
+    font-size: 38px; }
+  #about .section2 article .adopt p {
+    width: 750px;
+    font-size: 24px; }
+  #about .section2 article .adopt img {
+    width: 600px; }
+  /*Contact*/
+  #contact h1 {
+    padding-top: 220px;
+    font-size: 72px; }
+  #contact .formulary fieldset {
+    width: 900px; }
+    #contact .formulary fieldset div label {
+      font-size: 42px; }
+    #contact .formulary fieldset div input {
+      font-size: 38px;
+      padding: 15px;
+      height: 40px; }
+    #contact .formulary fieldset div textarea {
+      font-size: 38px;
+      padding: 15px;
+      height: 300px; }
+  #contact .formulary div {
+    margin: 70px; }
+    #contact .formulary div .checkbox .field {
+      width: 40px;
+      height: 40px; }
+    #contact .formulary div .checkbox label {
+      font-size: 38px; }
+    #contact .formulary div .buttons {
+      margin: 0px; }
+      #contact .formulary div .buttons input {
+        width: 460px;
+        margin: 0px 20px;
+        font-size: 52px; }
+  /*****FOOTER*****/
+  footer section .copyright p {
+    font-size: 24px; }
+  footer section .social img {
+    width: 65px; }
+  footer section .policies ul li a {
+    font-size: 24px; } }

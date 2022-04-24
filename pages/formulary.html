@@ -22,7 +22,7 @@
     <header id="globalHeader">
         <div class="header-container">
             <div class="logo">
-                <a href="../index.html"><img src="../assets/images/kisspng-dragon-city-symbol-5b096746bac428.073343851527342918765_dark.png"></a>
+                <a href="../index.html"><img class="img-fluid" src="../assets/images/kisspng-dragon-city-symbol-5b096746bac428.073343851527342918765_dark.png"></a>
             </div>
             <div class="navigation">
                 <nav>
@@ -47,25 +47,25 @@
                 <fieldset>
                     <div>
                         <label for="email">Email Address:</label><br>
-                        <input type="email" name="email" placeholder="example@domain.com">
+                        <input type="email" name="email" placeholder="example@domain.com" required>
                     </div>
                     <div>
                         <label for="first name">Name:</label><br>
-                        <input type="text" name="first name">
+                        <input type="text" name="first name" required>
                     </div>
                     <div>
                         <label for="last name">Last Name:</label><br>
-                        <input type="text" name="last name">
+                        <input type="text" name="last name" required>
                     </div>
                     <div>
                         <label for="textarea">Description:</label><br>
-                        <textarea name="textarea" placeholder="How can we help?"></textarea>
+                        <textarea name="textarea" placeholder="How can we help?" required></textarea>
                     </div>
                 </fieldset>
                 <div>
                     <div class="checkbox">
-                        <input type="checkbox" name="tos" value="1" class="field"/>
-                        <p>I agree to Draconia's Terms of Service and Privacy Policy</p>
+                        <input type="checkbox" name="tos" value="1" class="field" required/>
+                        <label for="tos">I agree to Draconia's Terms of Service and Privacy Policy</label>
                     </div>
                     <div class="buttons">
                         <input type="submit" value="Submit" class="buttonForm"/>

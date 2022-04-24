@@ -24,7 +24,7 @@
     <header id="globalHeader" class="headerBG-dragons">
         <div class="header-container">
             <div class="logo">
-                <a href="../index.html"><img src="../assets/images/kisspng-dragon-city-symbol-5b096746bac428.073343851527342918765_dark.png"></a>
+                <a href="../index.html"><img class="img-fluid" src="../assets/images/kisspng-dragon-city-symbol-5b096746bac428.073343851527342918765_dark.png"></a>
             </div>
             <div class="navigation">
                 <nav>
@@ -48,12 +48,18 @@
     <main id="shop">
         <h2 id="shopTitle">Dragon Eggs</h2>
         <hr>
-        <aside id="cart-table-container">
-            <img src="../assets/vectors/cart.svg">
-            <div id="number-container"></div>
+        <aside id="cart-container" class="position-initial">
+            <div id="cart-toggle">
+                <div class="cart-icon">
+                    <img src="../assets/vectors/cart.svg">
+                </div>
+                <div id="number-container"></div>
+            </div>
+            <div class="table-container">
+                <section id="cart"></section>
+            </div>
         </aside>
         <section id="eggShop"></section>
-        <section id="cart"></section>
     </main>
     <footer>
         <section>

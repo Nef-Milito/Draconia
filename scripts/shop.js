@@ -255,67 +255,21 @@ function getTotalQuantity() {
 
 checkLocalStorage();
 
-//Deprecated code.
+//Translate the cart.
 
-/* function stock() {
-    for (let i = 0; i < dragons.length; i++) {
-        var dragonName = dragons[i].getName();
-        nameString += dragonName + "\n";
-    }
+let cartIcon = document.getElementById('cart-toggle');
+let aside = document.getElementById('cart-container');
 
-    for (let i = 0; i < dragons.length; i++) {
-        var dragonName = dragons[i].getBreed();
-        nameString += dragonName + "\n";
-    }
+cartFolded = true;
 
-    for (let i = 0; i < dragons.length; i++) {
-        var dragonName = dragons[i].getRarity();
-        nameString += dragonName + "\n";
-    }
-
-    for (let i = 0; i < dragons.length; i++) {
-        var dragonName = dragons[i].getStock();
-        nameString += dragonName + "\n";
-    }
-
-    for (let i = 0; i < dragons.length; i++) {
-        var dragonName = dragons[i].getPrice();
-        nameString += dragonName + "\n";
-    }
-
-    for (let i = 0; i < dragons.length; i++) {
-        var dragonName = dragons[i].getOverview();
-        nameString += dragonName + "\n";
-    }
-} */
-
-/* function chooseDragon() {
-    stock();
-    selection = prompt("Choose a Dragon to adopt. Dragons available:\n " + nameString).toUpperCase();
-}
-
-function repeat() {
-    chooseDragon();
-    placeholder = dragons.filter(dragon => dragon.getName() == selection);
-    if (placeholder.length > 0) {
-        while (answer == false) {
-            cart.push(placeholder[0]);
-            choice = prompt("Do you wish to input another Dragon?").toLowerCase();
-
-            switch (choice) {
-                case "yes":
-                    repeat()
-                case "no":
-                    throw new Error("End of Script.");
-                default:
-                    alert("Input a valid answer.");
-                    break;
-            }
-        }
+cartIcon.onclick = () => {
+    if (cartFolded == true) {
+        aside.classList.add('position-translated');
+        aside.classList.remove('position-initial');
+        cartFolded = false;
     } else {
-        alert("Please input a valid Dragon.");
-        repeat();
+        aside.classList.remove('position-translated');
+        aside.classList.add('position-initial');
+        cartFolded = true;
     }
-} */
-
-/* repeat(); */
+}
