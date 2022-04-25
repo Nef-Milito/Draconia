@@ -314,6 +314,9 @@ html {
               padding: 10px 20px;
               cursor: pointer;
               font-size: 24px; }
+            #shop aside .table-container #cart #cartTable ul li div #clearSelection:hover {
+              background-color: rgba(241, 37, 37, 0.901);
+              color: #fff; }
           #shop aside .table-container #cart #cartTable ul .table-header-footer {
             background-color: #95A5A6;
             font-size: 14px;

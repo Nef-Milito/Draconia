@@ -417,6 +417,11 @@ html {
                                     cursor: pointer;
                                     font-size: 24px;
                                 }
+
+                                #clearSelection:hover {
+                                    background-color: rgba(241, 37, 37, 0.901);
+                                    color: #fff;
+                                }
                             }
                         }
 
