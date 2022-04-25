@@ -32,7 +32,7 @@ class Dragon {
 
 //Add all the products to an Array.
 
-dragons.push(new Dragon(0, "ARID BADLANDS", "Bloodchaser", "Rare", 500, "../assets/images/Bloodchaser/Arid Badlands/Arid_Badlands_Overview.png", "../assets/images/Bloodchaser/Arid Badlands/Arid_Badlands_egg.png"));
+dragons.push(new Dragon(0, "ARID BADLANDS", "Bloodchaser", "Rare", 500, "../assets/images/Bloodchaser/Arid Badlands/Arid_Badlands_Overview.png", "../assets/images/Bloodchaser/Arid Badlands/Arid_Badlands_Egg.png"));
 dragons.push(new Dragon(1, "FERROUS MOUNTAINS", "Bloodchaser", "Common", 100, "../assets/images/Bloodchaser/Ferrous Mountains/Ferrous_Mountains_Overview.png", "../assets/images/not_found.png"));
 dragons.push(new Dragon(2, "FJALNÄRRI MINES", "Nightsnagger", "Epic", 1000, "../assets/images/Nightsnagger/Fjalnarri Mines/Fjalnarri_Mines_Overview.png", "../assets/images/not_found.png"));
 dragons.push(new Dragon(3, "FORGOTTEN BOG", "Nightsnagger", "Rare", 500, "../assets/images/Nightsnagger/Forgotten Bog/Forgotten_Bog_Overview.png", "../assets/images/Nightsnagger/Forgotten Bog/Forgotten_Bog_Egg.png"));
