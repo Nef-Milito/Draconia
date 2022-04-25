@@ -317,6 +317,19 @@ html {
             #shop aside .table-container #cart #cartTable ul li div #clearSelection:hover {
               background-color: rgba(241, 37, 37, 0.901);
               color: #fff; }
+            #shop aside .table-container #cart #cartTable ul li div #checkout {
+              border: none;
+              width: fit-content;
+              border-radius: 10px;
+              padding: 10px 20px;
+              cursor: pointer; }
+              #shop aside .table-container #cart #cartTable ul li div #checkout a {
+                font-size: 24px;
+                text-decoration: none;
+                color: inherit; }
+            #shop aside .table-container #cart #cartTable ul li div #checkout:hover {
+              background-color: rgba(37, 241, 37, 0.901);
+              color: #fff; }
           #shop aside .table-container #cart #cartTable ul .table-header-footer {
             background-color: #95A5A6;
             font-size: 14px;

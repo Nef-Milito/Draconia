@@ -176,6 +176,7 @@ function createTable(array) {
         <ul>
             <li>
                 <div><button id="clearSelection">Clear Cart</button></div>
+                <div><button id="checkout"><a href="https://www.youtube.com/watch?v=iik25wqIuFo">Checkout</a></div>
             </li>
         </ul>
     </div>

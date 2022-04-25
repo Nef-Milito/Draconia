@@ -422,6 +422,25 @@ html {
                                     background-color: rgba(241, 37, 37, 0.901);
                                     color: #fff;
                                 }
+
+                                #checkout {
+                                    border: none;
+                                    width: fit-content;
+                                    border-radius: 10px;
+                                    padding: 10px 20px;
+                                    cursor: pointer;
+
+                                    a {
+                                        font-size: 24px;
+                                        text-decoration: none;
+                                        color: inherit;
+                                    }
+                                }
+
+                                #checkout:hover {
+                                    background-color: rgba(37, 241, 37, 0.901);
+                                    color: #fff;
+                                }
                             }
                         }
 
