@@ -357,9 +357,13 @@ html {
     text-align: center;
     font-size: 48px;
     font-family: 'Lemonada', sans-serif; }
-  #shop hr {
-    width: 1350px;
-    margin: auto; }
+  #shop #shopTitle:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 650px;
+    margin: 20px auto 0;
+    background-color: #efefef; }
   #shop section {
     display: flex;
     flex-flow: wrap;
@@ -834,8 +838,8 @@ footer {
   #shop #shopTitle {
     margin-top: 20px;
     font-size: 72px; }
-  #shop hr {
-    width: 2300px; }
+  #shop #shopTitle:after {
+    width: 1800px; }
   /*About*/
   #about .section1 {
     margin: 120px 0px; }
@@ -1157,8 +1161,6 @@ footer {
     background-color: rgba(0, 0, 0, 0.775); }
   #shop aside:active #cart-toggle {
     background-color: #0b202b; }
-  #shop hr {
-    width: 900px; }
   #shop section .card .card-inner .card-back .select:hover {
     background-color: #ffbe33; }
   #shop section .card .card-inner .card-back .select:active {
@@ -1333,8 +1335,8 @@ footer {
         width: 600px; }
         #shop aside .table-container #cart #cartTable ul li div {
           font-size: 14px; }
-    #shop hr {
-      width: 620px; }
+    #shop #shopTitle:after {
+      width: 600px; }
     #shop section .card {
       width: 280px;
       margin: 20px 15px 450px; }
@@ -1519,8 +1521,8 @@ footer {
               font-size: 14px; }
     #shop #shopTitle {
       font-size: 36px; }
-    #shop hr {
-      width: 550px; }
+    #shop #shopTitle:after {
+      width: 400px; }
     #shop section .card {
       width: 240px;
       margin: 15px 15px 400px; }
@@ -1774,8 +1776,8 @@ footer {
               flex-basis: 10%; }
     #shop #shopTitle {
       font-size: 36px; }
-    #shop hr {
-      width: 450px; }
+    #shop #shopTitle:after {
+      width: 300px; }
     #shop section .card {
       width: 200px;
       margin: 15px 15px 360px; }
@@ -1892,11 +1894,14 @@ footer {
 @media (max-width: 480px) {
   /*****HEADER*****/
   .headerBG {
-    padding-bottom: 400px; }
+    background-size: contain;
+    padding-bottom: 200px; }
   .headerBG-dragons {
-    padding-bottom: 320px; }
+    background-size: contain;
+    padding-bottom: 200px; }
   .headerBG-about {
-    padding-bottom: 320px; }
+    background-size: contain;
+    padding-bottom: 200px; }
   #globalHeader .responsive-header .header-mobile .logo {
     width: 40px;
     margin: 10px 0px 10px 20px; }
@@ -1950,18 +1955,23 @@ footer {
       width: 32px;
       height: 32px; }
   #globalHeader .indexButton a {
-    width: 200px; }
+    width: 200px;
+    display: none; }
     #globalHeader .indexButton a button {
       font-size: 22px; }
-  #globalHeader .title h1 {
-    font-size: 28px; }
-  #globalHeader .title h1:after {
-    width: 190px; }
+  #globalHeader .title {
+    display: none; }
+    #globalHeader .title h1 {
+      font-size: 28px; }
+    #globalHeader .title h1:after {
+      width: 190px; }
   /*Homepage*/
-  #content article h1 {
-    font-size: 32px; }
-  #content article p {
-    font-size: 10px; }
+  #content article {
+    margin: 10px; }
+    #content article h1 {
+      font-size: 32px; }
+    #content article p {
+      font-size: 10px; }
   #content .info-container {
     flex-flow: column;
     align-items: center;
@@ -2058,8 +2068,8 @@ footer {
     #shop #shopTitle {
       font-size: 32px;
       padding-bottom: 10px; }
-    #shop hr {
-      width: 270px; }
+    #shop #shopTitle:after {
+      width: 260px; }
     #shop section .card {
       width: 240px;
       margin: 15px 15px 390px; }
@@ -2094,7 +2104,7 @@ footer {
             font-size: 24px; }
   /*About*/
   #about .section1 {
-    margin: 40px 30px; }
+    margin: 10px 30px 40px; }
     #about .section1 .information {
       flex-flow: column; }
       #about .section1 .information div {
@@ -2195,12 +2205,6 @@ footer {
 
 @media (max-width: 320px) {
   /*****HEADER*****/
-  .headerBG {
-    padding-bottom: 280px; }
-  .headerBG-dragons {
-    padding-bottom: 280px; }
-  .headerBG-about {
-    padding-bottom: 280px; }
   #globalHeader .responsive-header .header-mobile .logo {
     width: 30px;
     margin: 10px 0px 10px 20px; }
@@ -2264,13 +2268,15 @@ footer {
   #globalHeader .title h1:after {
     width: 170px; }
   /*Homepage*/
-  #content article h1 {
-    font-size: 28px;
-    margin: 0 20px; }
-  #content article h1:after {
-    width: 150px; }
-  #content article p {
-    font-size: 10px; }
+  #content article {
+    margin: 0; }
+    #content article h1 {
+      font-size: 28px;
+      margin: 0 20px; }
+    #content article h1:after {
+      width: 150px; }
+    #content article p {
+      font-size: 10px; }
   #content .info-container {
     flex-flow: column;
     align-items: center;
@@ -2410,7 +2416,7 @@ footer {
             font-size: 24px; }
   /*About*/
   #about .section1 {
-    margin: 40px 30px; }
+    margin: 0px 30px 40px; }
     #about .section1 .information {
       flex-flow: column; }
       #about .section1 .information div {

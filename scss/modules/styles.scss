@@ -495,9 +495,13 @@ html {
         font-family: 'Lemonada', sans-serif;
     }
 
-    hr {
-        width: 1350px;
-        margin: auto;
+    #shopTitle:after {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 650px;
+        margin: 20px auto 0;
+        background-color: #efefef;
     }
 
     section {

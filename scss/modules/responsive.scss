@@ -205,8 +205,8 @@
             font-size: 72px;
         }
 
-        hr {
-            width: 2300px;
+        #shopTitle:after {
+            width: 1800px;
         }
     }
 
@@ -872,10 +872,6 @@
             }
         }
 
-        hr {
-            width: 900px;
-        }
-
         section .card .card-inner .card-back {
             .select:hover {
                 background-color: #ffbe33;
@@ -1236,8 +1232,8 @@
             }
         }
 
-        hr {
-            width: 620px;
+        #shopTitle:after {
+            width: 600px;
         }
 
         section .card {
@@ -1593,8 +1589,8 @@
             font-size: 36px;
         }
 
-        hr {
-            width: 550px;
+        #shopTitle:after {
+            width: 400px;
         }
 
         section .card {
@@ -2073,8 +2069,8 @@
             font-size: 36px;
         }
 
-        hr {
-            width: 450px;
+        #shopTitle:after {
+            width: 300px;
         }
 
         section .card {
@@ -2291,15 +2287,18 @@
 
     /*****HEADER*****/
     .headerBG {
-        padding-bottom: 400px;
+        background-size: contain;
+        padding-bottom: 200px;
     }
 
     .headerBG-dragons {
-        padding-bottom: 320px;
+        background-size: contain;
+        padding-bottom: 200px;
     }
 
     .headerBG-about {
-        padding-bottom: 320px;
+        background-size: contain;
+        padding-bottom: 200px;
     }
 
     #globalHeader {
@@ -2392,6 +2391,7 @@
 
         .indexButton a {
             width: 200px;
+            display: none;
 
             button {
                 font-size: 22px;
@@ -2399,6 +2399,8 @@
         }
 
         .title {
+            display: none;
+
             h1 {
                 font-size: 28px;
             }
@@ -2412,6 +2414,8 @@
     /*Homepage*/
     #content {
         article {
+            margin: 10px;
+
             h1 {
                 font-size: 32px;
             }
@@ -2595,8 +2599,8 @@
             padding-bottom: 10px;
         }
 
-        hr {
-            width: 270px;
+        #shopTitle:after {
+            width: 260px;
         }
 
         section .card {
@@ -2664,7 +2668,7 @@
     /*About*/
     #about {
         .section1 {
-            margin: 40px 30px;
+            margin: 10px 30px 40px;
 
             .information {
                 flex-flow: column;
@@ -2844,18 +2848,6 @@
 @media (max-width: 320px) {
 
     /*****HEADER*****/
-    .headerBG {
-        padding-bottom: 280px;
-    }
-
-    .headerBG-dragons {
-        padding-bottom: 280px;
-    }
-
-    .headerBG-about {
-        padding-bottom: 280px;
-    }
-
     #globalHeader {
         .responsive-header {
             .header-mobile {
@@ -2968,6 +2960,8 @@
     /*Homepage*/
     #content {
         article {
+            margin: 0;
+
             h1 {
                 font-size: 28px;
                 margin: 0 20px;
@@ -3232,7 +3226,7 @@
     /*About*/
     #about {
         .section1 {
-            margin: 40px 30px;
+            margin: 0px 30px 40px;
 
             .information {
                 flex-flow: column;
