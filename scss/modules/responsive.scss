@@ -6,6 +6,11 @@
         padding-bottom: 1300px;
     }
 
+    .headerBG-dragons {
+        background-size: contain;
+        padding-bottom: 1300px;
+    }
+
     .headerBG-about {
         background-size: contain;
         padding-bottom: 1300px;
@@ -23,8 +28,8 @@
 
             .header-vectors {
                 .location img {
-                    width: 80px;
-                    height: 80px;
+                    width: 100px;
+                    height: 100px;
                 }
 
                 .account img {
@@ -128,6 +133,80 @@
                     width: 500px;
                 }
             }
+        }
+    }
+
+    /*Dragons*/
+    #shop {
+        .position-initial {
+            right: -1580px;
+        }
+
+        aside {
+            #cart-toggle {
+                padding: 30px;
+                height: 70px;
+
+                .cart-icon img {
+                    width: 75px;
+                }
+
+                #number-container {
+                    top: -38%;
+
+                    div {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .table-container {
+                height: 730px;
+
+                #cart {
+                    #cartTable {
+                        width: 1500px;
+
+                        ul {
+                            li {
+                                div {
+                                    font-size: 18px;
+
+                                    #clearSelection {
+                                        font-size: 28px;
+                                        padding: 15px 30px;
+                                    }
+
+                                    #checkout {
+                                        padding: 15px 30px;
+
+                                        a {
+                                            font-size: 28px;
+                                        }
+                                    }
+                                }
+
+                                .removeBtn {
+                                    padding: 10px;
+
+                                    img {
+                                        width: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #shopTitle {
+            margin-top: 20px;
+            font-size: 72px;
+        }
+
+        hr {
+            width: 2300px;
         }
     }
 
@@ -268,6 +347,11 @@
 
     /*****HEADER*****/
     .headerBG {
+        background-size: contain;
+        padding-bottom: 1000px;
+    }
+
+    .headerBG-dragons {
         background-size: contain;
         padding-bottom: 1000px;
     }
@@ -574,7 +658,7 @@
                         position: absolute;
                         background: rgba(0, 0, 0, 0.885);
                         width: 70%;
-                        right: 17vw;
+                        right: 14.3vw;
                         border-bottom-left-radius: 10px;
                         border-bottom-right-radius: 10px;
 
@@ -724,6 +808,87 @@
                 }
             }
         }
+    }
+
+    /*Dragons*/
+    #shop {
+        .position-initial {
+            transition: 0.5s;
+            right: -115vh;
+            position: fixed;
+        }
+
+        aside {
+            .table-container {
+                #cart {
+                    #cartTable {
+                        width: 850px;
+
+                        ul li {
+                            .removeBtn:hover {
+                                background-color: rgba(227, 73, 73, 0.718);
+                            }
+
+                            .removeBtn:active {
+                                background-color: rgba(241, 37, 37, 0.901);
+                            }
+
+                            div {
+                                #clearSelection:hover {
+                                    background-color: #fff;
+                                    color: #000;
+                                }
+
+                                #clearSelection:active {
+                                    background-color: rgba(241, 37, 37, 0.901);
+                                    color: #fff;
+                                }
+
+                                #checkout:hover {
+                                    background-color: #fff;
+                                    color: #000;
+                                }
+
+                                #checkout:active {
+                                    background-color: rgba(37, 241, 37, 0.901);
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        aside:hover {
+            #cart-toggle {
+                background-color: rgba(0, 0, 0, 0.775);
+            }
+        }
+
+        aside:active {
+            #cart-toggle {
+                background-color: #0b202b;
+            }
+        }
+
+        hr {
+            width: 900px;
+        }
+
+        section .card .card-inner .card-back {
+            .select:hover {
+                background-color: #ffbe33;
+            }
+
+            .select:active {
+                background-color: #d4b05a;
+            }
+        }
+    }
+
+    .toast {
+        display: none;
     }
 
     /*About*/
@@ -911,6 +1076,7 @@
     }
 
     .headerBG-dragons {
+        background-image: url(../../assets/images/Bloodchaser/Warelm/Warelm_Side.png);
         padding-bottom: 576px;
     }
 
@@ -921,7 +1087,7 @@
     #globalHeader {
         .responsive-header .header-mobile {
             .dropdown-menu #dropdown {
-                right: 17vw;
+                right: 14.3vw;
             }
 
             .header-vectors {
@@ -936,12 +1102,13 @@
         }
 
         .indexButton a {
-            top: 60%;
+            top: 40%;
         }
 
         .title {
             h1 {
                 font-size: 58px;
+                top: 40%;
             }
 
             h1:after {
@@ -1038,6 +1205,98 @@
 
                 img {
                     width: 250px;
+                }
+            }
+        }
+    }
+
+    /*Dragons*/
+    #shop {
+        padding: 60px 30px;
+
+        .position-initial {
+            transition: 0.5s;
+            right: -86.5vh;
+            position: fixed;
+        }
+
+        aside {
+            .table-container {
+                height: 500px;
+
+                #cart #cartTable {
+                    width: 600px;
+
+                    ul li {
+                        div {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+        hr {
+            width: 620px;
+        }
+
+        section .card {
+            width: 280px;
+            margin: 20px 15px 450px;
+
+            .card-inner {
+
+                .card-front {
+                    height: 420px;
+
+                    h3 {
+                        margin: 10px 0px 5px;
+                        font-size: 22px;
+                    }
+
+                    img {
+                        width: 250px;
+                    }
+
+                    p {
+                        font-size: 18px;
+                        margin: 10px;
+                    }
+
+                    #rarity {
+                        font-size: 20px;
+                    }
+
+                    #rarity:after {
+                        width: 260px;
+                    }
+
+                    .price {
+                        padding: 5px;
+
+                        p {
+                            font-size: 28px;
+                        }
+                    }
+                }
+
+                .card-back {
+                    width: 280px;
+                    height: 420px;
+
+                    img {
+                        margin: 10px;
+                        width: 230px;
+                    }
+
+                    .select {
+                        margin: 18px 20px;
+                        padding: 15px 0;
+
+                        p {
+                            font-size: 28px;
+                        }
+                    }
                 }
             }
         }
@@ -1167,7 +1426,7 @@
                     }
 
                     #dropdown {
-                        right: 17.5vw;
+                        right: 14.3vw;
                     }
                 }
 
@@ -1187,9 +1446,14 @@
             }
         }
 
+        .indexButton a {
+            top: 50%;
+        }
+
         .title {
             h1 {
                 font-size: 42px;
+                top: 50%;
             }
 
             h1:after {
@@ -1286,6 +1550,110 @@
 
                 img {
                     width: 250px;
+                }
+            }
+        }
+    }
+
+    /*Dragons*/
+    #shop {
+        padding: 40px 30px;
+
+        .position-initial {
+            transition: 0.5s;
+            right: -115vh;
+            position: fixed;
+        }
+
+        aside {
+            .table-container {
+                height: 400px;
+
+                #cart {
+                    padding: 20px;
+
+                    #cartTable {
+                        width: 600px;
+
+                        ul {
+                            padding: 0%;
+
+                            li {
+                                div {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #shopTitle {
+            font-size: 36px;
+        }
+
+        hr {
+            width: 550px;
+        }
+
+        section .card {
+            width: 240px;
+            margin: 15px 15px 400px;
+
+            .card-inner {
+
+                .card-front {
+                    height: 360px;
+
+                    h3 {
+                        margin: 5px 0px 5px;
+                        font-size: 18px;
+                    }
+
+                    img {
+                        width: 220px;
+                    }
+
+                    p {
+                        font-size: 18px;
+                        margin: 5px;
+                    }
+
+                    #rarity {
+                        font-size: 20px;
+                    }
+
+                    #rarity:after {
+                        width: 210px;
+                    }
+
+                    .price {
+                        padding: 5px;
+
+                        p {
+                            font-size: 24px;
+                        }
+                    }
+                }
+
+                .card-back {
+                    width: 240px;
+                    height: 360px;
+
+                    img {
+                        margin: 10px;
+                        width: 200px;
+                    }
+
+                    .select {
+                        margin: 10px 20px;
+                        padding: 15px 0;
+
+                        p {
+                            font-size: 24px;
+                        }
+                    }
                 }
             }
         }
@@ -1458,7 +1826,7 @@
                         position: absolute;
                         background: rgba(0, 0, 0, 0.885);
                         width: 60%;
-                        right: 23.8vw;
+                        right: 19.5vw;
                         border-bottom-left-radius: 10px;
                         border-bottom-right-radius: 10px;
 
@@ -1571,7 +1939,7 @@
             justify-content: center;
             text-align: center;
             margin: 20px 30px;
-            
+
             div {
                 h2 {
                     font-size: 32px;
@@ -1615,7 +1983,157 @@
                 }
 
                 img {
+                    width: 250px;
+                }
+            }
+        }
+    }
+
+    /*Dragons*/
+    #shop {
+        padding: 35px 10px;
+
+        .position-initial {
+            transition: 0.5s;
+            right: -77vh;
+            position: fixed;
+        }
+
+        aside {
+
+            #cart-toggle {
+                height: 35px;
+
+                .cart-icon img {
+                    width: 35px;
+                }
+
+                #number-container {
+                    width: 17%;
+                    padding: 3px 10px;
+
+                    div {
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            .table-container {
+                height: 280px;
+
+                #cart {
+                    padding: 10px 10px 0 0;
+
+                    #cartTable {
+                        width: 350px;
+                        padding: 0px;
+
+                        ul {
+                            padding: 0%;
+                            padding-left: 10px;
+
+                            li {
+                                padding: 12px 15px;
+
+                                div {
+                                    font-size: 12px;
+
+                                    #clearSelection {
+                                        font-size: 16px;
+                                    }
+
+                                    #checkout a {
+                                        font-size: 16px;
+                                    }
+                                }
+
+                                .removeBtn {
+                                    padding: 3px 5px;
+
+                                    img {
+                                        width: 10px;
+                                    }
+                                }
+                            }
+
+                            .col-2 {
+                                flex-basis: 20%;
+                            }
+
+                            .col-3 {
+                                flex-basis: 10%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #shopTitle {
+            font-size: 36px;
+        }
+
+        hr {
+            width: 450px;
+        }
+
+        section .card {
+            width: 200px;
+            margin: 15px 15px 360px;
+
+            .card-inner {
+
+                .card-front {
+                    height: 328px;
+
+                    h3 {
+                        margin: 5px 0px 5px;
+                        font-size: 16px;
+                    }
+
+                    img {
+                        width: 180px;
+                    }
+
+                    p {
+                        font-size: 18px;
+                        margin: 5px;
+                    }
+
+                    #rarity {
+                        font-size: 20px;
+                    }
+
+                    #rarity:after {
+                        width: 170px;
+                    }
+
+                    .price {
+                        padding: 5px;
+
+                        p {
+                            font-size: 24px;
+                        }
+                    }
+                }
+
+                .card-back {
                     width: 200px;
+                    height: 328px;
+
+                    img {
+                        margin: 10px;
+                        width: 150px;
+                    }
+
+                    .select {
+                        margin: 38px 15px;
+                        padding: 15px 0;
+
+                        p {
+                            font-size: 24px;
+                        }
+                    }
                 }
             }
         }
@@ -1625,7 +2143,7 @@
     #about {
         .section1 {
             margin: 40px 30px;
-            
+
             .information {
                 flex-flow: column;
 
@@ -1714,6 +2232,8 @@
         }
 
         .formulary {
+            margin-top: -10px;
+
             fieldset {
                 width: 300px;
 
@@ -1726,12 +2246,14 @@
                     }
 
                     input {
+                        margin-top: -15px;
                         font-size: 18px;
                         padding: 10px;
                         height: 20px;
                     }
 
                     textarea {
+                        margin-top: -15px;
                         font-size: 18px;
                         padding: 10px;
                         height: 120px;
@@ -1765,6 +2287,1125 @@
     }
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
 
-@media (max-width: 320px) {}
+    /*****HEADER*****/
+    .headerBG {
+        padding-bottom: 400px;
+    }
+
+    .headerBG-dragons {
+        padding-bottom: 320px;
+    }
+
+    .headerBG-about {
+        padding-bottom: 320px;
+    }
+
+    #globalHeader {
+        .responsive-header {
+            .header-mobile {
+                .logo {
+                    width: 40px;
+
+                    margin: 10px 0px 10px 20px;
+                }
+
+                .dropdown-menu {
+                    margin: 10px 0px;
+                    text-align: center;
+
+                    #dropdown-trigger {
+                        transition: 0.5s;
+                        width: 32px;
+                    }
+
+                    .dropdown-trigger-up {
+                        transition: 0.5s;
+                        -webkit-transform: scaleY(-1);
+                        transform: scaleY(-1);
+                    }
+
+                    .dropdown-hidden {
+                        top: -380%;
+                        transition: 0.5s;
+                    }
+
+                    .dropdown-shown {
+                        top: 99%;
+                        transition: 0.5s;
+                    }
+
+                    #dropdown {
+                        z-index: 1;
+                        transition: 0.5s;
+                        position: absolute;
+                        background: rgba(0, 0, 0, 0.885);
+                        width: 60%;
+                        right: 19.5;
+                        border-bottom-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+
+                        ul {
+                            text-align: center;
+                            padding: 0%;
+                            padding: 5px;
+
+                            a {
+                                text-decoration: none;
+                                color: #fff;
+
+                                li {
+                                    list-style-type: none;
+                                    display: block;
+                                    font-size: 28px;
+                                    margin: 15px;
+                                }
+
+                                li:hover {
+                                    color: #fff;
+                                }
+
+                                li:active {
+                                    color: #efc864;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .header-vectors {
+                    margin: 10px 20px 10px 0px;
+
+                    .location img {
+                        width: 32px;
+                        height: 32px;
+                    }
+
+                    .account img {
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+            }
+        }
+
+        .indexButton a {
+            width: 200px;
+
+            button {
+                font-size: 22px;
+            }
+        }
+
+        .title {
+            h1 {
+                font-size: 28px;
+            }
+
+            h1:after {
+                width: 190px;
+            }
+        }
+    }
+
+    /*Homepage*/
+    #content {
+        article {
+            h1 {
+                font-size: 32px;
+            }
+
+            p {
+                font-size: 10px;
+            }
+        }
+
+        .info-container {
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 20px 30px;
+
+            div {
+                h2 {
+                    font-size: 24px;
+                }
+
+                p {
+                    width: 265px;
+                    font-size: 12px;
+                }
+
+                button {
+                    margin: 20px auto 0px;
+                    font-size: 16px;
+                }
+
+                img {
+                    width: 200px;
+                }
+            }
+        }
+
+        .info1-container {
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 20px 30px;
+
+            div {
+                h2 {
+                    font-size: 24px;
+                }
+
+                p {
+                    width: 265px;
+                    font-size: 12px;
+
+                    a {
+                        font-size: inherit;
+                    }
+                }
+
+                button {
+                    margin: 20px auto 0px;
+                    font-size: 24px;
+                }
+
+                img {
+                    width: 200px;
+                }
+            }
+        }
+
+        .info2-container {
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 20px 30px 30px;
+
+            div {
+                h2 {
+                    font-size: 24px;
+                }
+
+                p {
+                    width: 265px;
+                    font-size: 12px;
+                }
+
+                img {
+                    width: 200px;
+                }
+            }
+        }
+    }
+
+    /*Dragons*/
+    #shop {
+        padding: 25px 10px;
+
+        .position-initial {
+            transition: 0.5s;
+            right: -85vh;
+            position: fixed;
+        }
+
+        aside {
+            top: 25%;
+
+            #cart-toggle {
+                height: 30px;
+
+                .cart-icon img {
+                    width: 30px;
+                }
+
+                #number-container {
+                    width: 17%;
+                    padding: 3px 8px;
+
+                    div {
+                        font-size: 8px;
+                    }
+                }
+            }
+
+            .table-container {
+                height: 230px;
+
+                #cart {
+                    padding: 10px 10px 0 0;
+
+                    #cartTable {
+                        width: 250px;
+                        padding: 0px;
+
+                        ul {
+                            padding: 0%;
+                            padding-left: 10px;
+
+                            li {
+                                padding: 12px 15px;
+
+                                div {
+                                    font-size: 10px;
+
+                                    #clearSelection {
+                                        font-size: 12px;
+                                    }
+
+                                    #checkout {
+                                        padding: 7.2px 20px;
+
+                                        a {
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+
+                                .removeBtn {
+                                    padding: 3px 5px;
+
+                                    img {
+                                        width: 10px;
+                                    }
+                                }
+                            }
+
+                            .col-2 {
+                                flex-basis: 20%;
+                            }
+
+                            .col-3 {
+                                flex-basis: 10%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #shopTitle {
+            font-size: 32px;
+            padding-bottom: 10px;
+        }
+
+        hr {
+            width: 270px;
+        }
+
+        section .card {
+            width: 240px;
+            margin: 15px 15px 390px;
+
+            .card-inner {
+
+                .card-front {
+                    height: 360px;
+
+                    h3 {
+                        margin: 5px 0px 5px;
+                        font-size: 18px;
+                    }
+
+                    img {
+                        width: 220px;
+                    }
+
+                    p {
+                        font-size: 18px;
+                        margin: 5px;
+                    }
+
+                    #rarity {
+                        font-size: 20px;
+                    }
+
+                    #rarity:after {
+                        width: 210px;
+                    }
+
+                    .price {
+                        padding: 5px;
+
+                        p {
+                            font-size: 24px;
+                        }
+                    }
+                }
+
+                .card-back {
+                    width: 240px;
+                    height: 360px;
+
+                    img {
+                        margin: 10px;
+                        width: 200px;
+                    }
+
+                    .select {
+                        margin: 8px 15px;
+                        padding: 15px 0;
+
+                        p {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*About*/
+    #about {
+        .section1 {
+            margin: 40px 30px;
+
+            .information {
+                flex-flow: column;
+
+                div {
+                    margin: 20px 20px;
+
+                    h2 {
+                        text-align: center;
+                        font-size: 24px;
+                    }
+
+                    p {
+                        text-align: center;
+                        width: 300px;
+                        font-size: 14px;
+                    }
+
+                    img {
+                        width: 300px;
+                    }
+                }
+            }
+
+            .visionAndMission {
+                margin: 20px 30px;
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                justify-content: center;
+
+                .VAMimg img {
+                    width: 150px;
+                }
+
+                .vision {
+                    margin: 20px 0;
+                }
+
+                h2 {
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                }
+
+                .mission {
+                    margin: 20px 0px;
+                }
+
+                p {
+                    width: 300px;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .section2 {
+            padding: 10px 0;
+
+            article {
+
+                .adopt {
+                    margin: 15px 30px;
+
+                    h3 {
+                        font-size: 18px;
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        width: 300px;
+                        font-size: 12px;
+                    }
+
+                    img {
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*Contact*/
+    #contact {
+        h1 {
+            padding-top: 100px;
+            font-size: 22px;
+        }
+
+        .formulary {
+            margin-top: -30px;
+
+            fieldset {
+                width: 230px;
+
+                div {
+                    margin: 15px 0;
+
+                    label {
+                        margin: 0;
+                        font-size: 18px;
+                    }
+
+                    input {
+                        margin-top: -15px;
+                        font-size: 14px;
+                        padding: 10px;
+                        height: 10px;
+                    }
+
+                    textarea {
+                        margin-top: -15px;
+                        font-size: 14px;
+                        padding: 10px;
+                        height: 100px;
+                    }
+                }
+            }
+
+            div {
+                margin: 20px 0px;
+
+                .checkbox {
+                    margin: 10px 10px;
+
+                    .field {
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    label {
+                        font-size: 14px;
+                    }
+                }
+
+                .buttons {
+                    input {
+                        width: 130px;
+                        margin: 0px 10px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*****FOOTER*****/
+    footer {
+        padding: 20px;
+
+        section {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+
+            .copyright p {
+                font-size: 12px;
+            }
+
+            .social img {
+                margin: 20px 10px;
+                width: 32px;
+            }
+
+            .policies ul li {
+                margin: 0 10px;
+
+                a {
+                    text-decoration: underline;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+
+    /*****HEADER*****/
+    .headerBG {
+        padding-bottom: 280px;
+    }
+
+    .headerBG-dragons {
+        padding-bottom: 280px;
+    }
+
+    .headerBG-about {
+        padding-bottom: 280px;
+    }
+
+    #globalHeader {
+        .responsive-header {
+            .header-mobile {
+                .logo {
+                    width: 30px;
+
+                    margin: 10px 0px 10px 20px;
+                }
+
+                .dropdown-menu {
+                    margin: 10px 0px;
+                    text-align: center;
+
+                    #dropdown-trigger {
+                        transition: 0.5s;
+                        width: 25px;
+                    }
+
+                    .dropdown-trigger-up {
+                        transition: 0.5s;
+                        -webkit-transform: scaleY(-1);
+                        transform: scaleY(-1);
+                    }
+
+                    .dropdown-hidden {
+                        top: -380%;
+                        transition: 0.5s;
+                    }
+
+                    .dropdown-shown {
+                        top: 99%;
+                        transition: 0.5s;
+                    }
+
+                    #dropdown {
+                        z-index: 1;
+                        transition: 0.5s;
+                        position: absolute;
+                        background: rgba(0, 0, 0, 0.885);
+                        width: 60%;
+                        right: 19.5vw;
+                        border-bottom-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+
+                        ul {
+                            text-align: center;
+                            padding: 0%;
+                            padding: 5px;
+
+                            a {
+                                text-decoration: none;
+                                color: #fff;
+
+                                li {
+                                    list-style-type: none;
+                                    display: block;
+                                    font-size: 20px;
+                                    margin: 15px;
+                                }
+
+                                li:hover {
+                                    color: #fff;
+                                }
+
+                                li:active {
+                                    color: #efc864;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .header-vectors {
+                    margin: 10px 20px 10px 0px;
+
+                    .location img {
+                        width: 25px;
+                        height: 25px;
+                    }
+
+                    .account img {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+            }
+        }
+
+        .indexButton a {
+            top: 50%;
+            width: 200px;
+
+            button {
+                font-size: 18px;
+            }
+        }
+
+        .title {
+            h1 {
+                top: 50%;
+                font-size: 24px;
+            }
+
+            h1:after {
+                width: 170px;
+            }
+        }
+    }
+
+    /*Homepage*/
+    #content {
+        article {
+            h1 {
+                font-size: 28px;
+                margin: 0 20px;
+            }
+
+            h1:after {
+                width: 150px;
+            }
+
+            p {
+                font-size: 10px;
+            }
+        }
+
+        .info-container {
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 20px 30px;
+
+            div {
+                h2 {
+                    font-size: 24px;
+                    margin: 0 5px;
+                }
+
+                p {
+                    width: 250px;
+                    font-size: 12px;
+                }
+
+                button {
+                    margin: 20px auto 0px;
+                    font-size: 20px;
+                }
+
+                img {
+                    margin-top: -15px;
+                    width: 150px;
+                }
+            }
+        }
+
+        .info1-container {
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 20px 30px;
+
+            div {
+                h2 {
+                    font-size: 24px;
+                    margin: 0 5px;
+                }
+
+                p {
+                    width: 250px;
+                    font-size: 12px;
+
+                    a {
+                        font-size: inherit;
+                    }
+                }
+
+                button {
+                    margin: 20px auto 0px;
+                    font-size: 20px;
+                }
+
+                img {
+                    margin-bottom: -25px;
+                    width: 150px;
+                }
+            }
+        }
+
+        .info2-container {
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 20px 30px 30px;
+
+            div {
+                h2 {
+                    font-size: 24px;
+                    margin: 0 5px;
+                }
+
+                p {
+                    width: 250px;
+                    font-size: 12px;
+                }
+
+                img {
+                    margin-top: -15px;
+                    width: 150px;
+                }
+            }
+        }
+    }
+
+    /*Dragons*/
+    #shop {
+        padding: 25px 10px;
+
+        .position-initial {
+            transition: 0.5s;
+            right: -112vh;
+            position: fixed;
+        }
+
+        aside {
+            top: 25%;
+
+            #cart-toggle {
+                padding: 15px;
+                height: 20px;
+
+                .cart-icon img {
+                    width: 20px;
+                }
+
+                #number-container {
+                    width: 10%;
+                    padding: 1px 6.8px;
+
+                    div {
+                        font-size: 7px;
+                    }
+                }
+            }
+
+            .table-container {
+                height: 170px;
+
+                #cart {
+                    padding: 10px 10px 0 0;
+
+                    #cartTable {
+                        width: 250px;
+                        padding: 0px;
+
+                        ul {
+                            padding: 0%;
+                            padding-left: 10px;
+
+                            li {
+                                padding: 12px 15px;
+
+                                div {
+                                    font-size: 10px;
+
+                                    #clearSelection {
+                                        font-size: 12px;
+                                    }
+
+                                    #checkout {
+                                        padding: 7.2px 20px;
+
+                                        a {
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+
+                                .removeBtn {
+                                    padding: 3px 5px;
+
+                                    img {
+                                        width: 10px;
+                                    }
+                                }
+                            }
+
+                            .col-2 {
+                                flex-basis: 20%;
+                            }
+
+                            .col-3 {
+                                flex-basis: 10%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #shopTitle {
+            font-size: 32px;
+            padding-bottom: 10px;
+        }
+
+        hr {
+            width: 270px;
+        }
+
+        section .card {
+            width: 240px;
+            margin: 15px 15px 390px;
+
+            .card-inner {
+
+                .card-front {
+                    height: 360px;
+
+                    h3 {
+                        margin: 5px 0px 5px;
+                        font-size: 18px;
+                    }
+
+                    img {
+                        width: 220px;
+                    }
+
+                    p {
+                        font-size: 18px;
+                        margin: 5px;
+                    }
+
+                    #rarity {
+                        font-size: 20px;
+                    }
+
+                    #rarity:after {
+                        width: 210px;
+                    }
+
+                    .price {
+                        padding: 5px;
+
+                        p {
+                            font-size: 24px;
+                        }
+                    }
+                }
+
+                .card-back {
+                    width: 240px;
+                    height: 360px;
+
+                    img {
+                        margin: 10px;
+                        width: 200px;
+                    }
+
+                    .select {
+                        margin: 8px 15px;
+                        padding: 15px 0;
+
+                        p {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*About*/
+    #about {
+        .section1 {
+            margin: 40px 30px;
+
+            .information {
+                flex-flow: column;
+
+                div {
+                    margin: 10px 0;
+
+                    h2 {
+                        text-align: center;
+                        font-size: 24px;
+                    }
+
+                    p {
+                        text-align: center;
+                        width: 250px;
+                        font-size: 12px;
+                    }
+
+                    img {
+                        width: 250px;
+                    }
+                }
+            }
+
+            .visionAndMission {
+                margin: 20px 30px;
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                justify-content: center;
+
+                .VAMimg img {
+                    width: 130px;
+                }
+
+                .vision {
+                    margin: 20px 0;
+                }
+
+                h2 {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+
+                .mission {
+                    margin: 20px 0px;
+                }
+
+                p {
+                    width: 250px;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .section2 {
+            padding: 10px 0;
+
+            article {
+
+                .adopt {
+                    margin: 15px 30px;
+
+                    h3 {
+                        font-size: 16px;
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        width: 250px;
+                        font-size: 12px;
+                    }
+
+                    img {
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*Contact*/
+    #contact {
+        h1 {
+            padding-top: 80px;
+            font-size: 20px;
+        }
+
+        .formulary {
+            margin-top: -30px;
+
+            fieldset {
+                width: 200px;
+
+                div {
+                    margin: 15px 0;
+
+                    label {
+                        margin: 0;
+                        font-size: 18px;
+                    }
+
+                    input {
+                        margin-top: -15px;
+                        font-size: 12px;
+                        padding: 10px;
+                        height: 10px;
+                    }
+
+                    textarea {
+                        margin-top: -15px;
+                        font-size: 12px;
+                        padding: 10px;
+                        height: 80px;
+                    }
+                }
+            }
+
+            div {
+                margin: 20px 0px;
+
+                .checkbox {
+                    margin: 10px 10px;
+
+                    .field {
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    label {
+                        font-size: 14px;
+                    }
+                }
+
+                .buttons {
+                    input {
+                        padding: 10px;
+                        width: 130px;
+                        margin: 0px 10px;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*****FOOTER*****/
+    footer {
+        padding: 20px;
+
+        section {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+
+            .copyright p {
+                font-size: 12px;
+            }
+
+            .social img {
+                margin: 20px 10px;
+                width: 25px;
+            }
+
+            .policies ul li {
+                margin: 0 10px;
+
+                a {
+                    text-decoration: underline;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

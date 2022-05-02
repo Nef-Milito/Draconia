@@ -744,6 +744,9 @@ footer {
   .headerBG {
     background-size: contain;
     padding-bottom: 1300px; }
+  .headerBG-dragons {
+    background-size: contain;
+    padding-bottom: 1300px; }
   .headerBG-about {
     background-size: contain;
     padding-bottom: 1300px; }
@@ -752,8 +755,8 @@ footer {
   #globalHeader .header-container .navigation ul li {
     font-size: 52px; }
   #globalHeader .header-container .header-vectors .location img {
-    width: 80px;
-    height: 80px; }
+    width: 100px;
+    height: 100px; }
   #globalHeader .header-container .header-vectors .account img {
     width: 80px;
     height: 80px; }
@@ -799,6 +802,40 @@ footer {
     font-size: 30px; }
   #content .info2-container div img {
     width: 500px; }
+  /*Dragons*/
+  #shop .position-initial {
+    right: -1580px; }
+  #shop aside #cart-toggle {
+    padding: 30px;
+    height: 70px; }
+    #shop aside #cart-toggle .cart-icon img {
+      width: 75px; }
+    #shop aside #cart-toggle #number-container {
+      top: -38%; }
+      #shop aside #cart-toggle #number-container div {
+        font-size: 16px; }
+  #shop aside .table-container {
+    height: 730px; }
+    #shop aside .table-container #cart #cartTable {
+      width: 1500px; }
+      #shop aside .table-container #cart #cartTable ul li div {
+        font-size: 18px; }
+        #shop aside .table-container #cart #cartTable ul li div #clearSelection {
+          font-size: 28px;
+          padding: 15px 30px; }
+        #shop aside .table-container #cart #cartTable ul li div #checkout {
+          padding: 15px 30px; }
+          #shop aside .table-container #cart #cartTable ul li div #checkout a {
+            font-size: 28px; }
+      #shop aside .table-container #cart #cartTable ul li .removeBtn {
+        padding: 10px; }
+        #shop aside .table-container #cart #cartTable ul li .removeBtn img {
+          width: 20px; }
+  #shop #shopTitle {
+    margin-top: 20px;
+    font-size: 72px; }
+  #shop hr {
+    width: 2300px; }
   /*About*/
   #about .section1 {
     margin: 120px 0px; }
@@ -865,6 +902,9 @@ footer {
 @media (min-width: 1920px) and (max-width: 2559px) {
   /*****HEADER*****/
   .headerBG {
+    background-size: contain;
+    padding-bottom: 1000px; }
+  .headerBG-dragons {
     background-size: contain;
     padding-bottom: 1000px; }
   .headerBG-about {
@@ -1016,7 +1056,7 @@ footer {
           position: absolute;
           background: rgba(0, 0, 0, 0.885);
           width: 70%;
-          right: 17vw;
+          right: 14.3vw;
           border-bottom-left-radius: 10px;
           border-bottom-right-radius: 10px; }
           #globalHeader .responsive-header .header-mobile .dropdown-menu #dropdown ul {
@@ -1090,6 +1130,41 @@ footer {
     font-size: 16px; }
   #content .info2-container div img {
     width: 250px; }
+  /*Dragons*/
+  #shop .position-initial {
+    transition: 0.5s;
+    right: -115vh;
+    position: fixed; }
+  #shop aside .table-container #cart #cartTable {
+    width: 850px; }
+    #shop aside .table-container #cart #cartTable ul li .removeBtn:hover {
+      background-color: rgba(227, 73, 73, 0.718); }
+    #shop aside .table-container #cart #cartTable ul li .removeBtn:active {
+      background-color: rgba(241, 37, 37, 0.901); }
+    #shop aside .table-container #cart #cartTable ul li div #clearSelection:hover {
+      background-color: #fff;
+      color: #000; }
+    #shop aside .table-container #cart #cartTable ul li div #clearSelection:active {
+      background-color: rgba(241, 37, 37, 0.901);
+      color: #fff; }
+    #shop aside .table-container #cart #cartTable ul li div #checkout:hover {
+      background-color: #fff;
+      color: #000; }
+    #shop aside .table-container #cart #cartTable ul li div #checkout:active {
+      background-color: rgba(37, 241, 37, 0.901);
+      color: #fff; }
+  #shop aside:hover #cart-toggle {
+    background-color: rgba(0, 0, 0, 0.775); }
+  #shop aside:active #cart-toggle {
+    background-color: #0b202b; }
+  #shop hr {
+    width: 900px; }
+  #shop section .card .card-inner .card-back .select:hover {
+    background-color: #ffbe33; }
+  #shop section .card .card-inner .card-back .select:active {
+    background-color: #d4b05a; }
+  .toast {
+    display: none; }
   /*About*/
   #about .section1 .information div {
     margin: 20px 30px; }
@@ -1179,19 +1254,21 @@ footer {
   .headerBG {
     padding-bottom: 576px; }
   .headerBG-dragons {
+    background-image: url(../../assets/images/Bloodchaser/Warelm/Warelm_Side.png);
     padding-bottom: 576px; }
   .headerBG-about {
     padding-bottom: 576px; }
   #globalHeader .responsive-header .header-mobile .dropdown-menu #dropdown {
-    right: 17vw; }
+    right: 14.3vw; }
   #globalHeader .responsive-header .header-mobile .header-vectors .location img {
     margin: 0 5px 0 0; }
   #globalHeader .responsive-header .header-mobile .header-vectors .account img {
     margin: 0 0 0 5px; }
   #globalHeader .indexButton a {
-    top: 60%; }
+    top: 40%; }
   #globalHeader .title h1 {
-    font-size: 58px; }
+    font-size: 58px;
+    top: 40%; }
   #globalHeader .title h1:after {
     width: 400px; }
   /*Homepage*/
@@ -1243,6 +1320,53 @@ footer {
       font-size: 16px; }
     #content .info2-container div img {
       width: 250px; }
+  /*Dragons*/
+  #shop {
+    padding: 60px 30px; }
+    #shop .position-initial {
+      transition: 0.5s;
+      right: -86.5vh;
+      position: fixed; }
+    #shop aside .table-container {
+      height: 500px; }
+      #shop aside .table-container #cart #cartTable {
+        width: 600px; }
+        #shop aside .table-container #cart #cartTable ul li div {
+          font-size: 14px; }
+    #shop hr {
+      width: 620px; }
+    #shop section .card {
+      width: 280px;
+      margin: 20px 15px 450px; }
+      #shop section .card .card-inner .card-front {
+        height: 420px; }
+        #shop section .card .card-inner .card-front h3 {
+          margin: 10px 0px 5px;
+          font-size: 22px; }
+        #shop section .card .card-inner .card-front img {
+          width: 250px; }
+        #shop section .card .card-inner .card-front p {
+          font-size: 18px;
+          margin: 10px; }
+        #shop section .card .card-inner .card-front #rarity {
+          font-size: 20px; }
+        #shop section .card .card-inner .card-front #rarity:after {
+          width: 260px; }
+        #shop section .card .card-inner .card-front .price {
+          padding: 5px; }
+          #shop section .card .card-inner .card-front .price p {
+            font-size: 28px; }
+      #shop section .card .card-inner .card-back {
+        width: 280px;
+        height: 420px; }
+        #shop section .card .card-inner .card-back img {
+          margin: 10px;
+          width: 230px; }
+        #shop section .card .card-inner .card-back .select {
+          margin: 18px 20px;
+          padding: 15px 0; }
+          #shop section .card .card-inner .card-back .select p {
+            font-size: 28px; }
   /*Contact*/
   #contact h1 {
     padding-top: 150px;
@@ -1311,7 +1435,7 @@ footer {
       top: 99%;
       transition: 0.5s; }
     #globalHeader .responsive-header .header-mobile .dropdown-menu #dropdown {
-      right: 17.5vw; }
+      right: 14.3vw; }
   #globalHeader .responsive-header .header-mobile .header-vectors {
     margin: 10px 20px 10px 0px; }
     #globalHeader .responsive-header .header-mobile .header-vectors .location img {
@@ -1320,8 +1444,11 @@ footer {
     #globalHeader .responsive-header .header-mobile .header-vectors .account img {
       width: 45px;
       height: 45px; }
+  #globalHeader .indexButton a {
+    top: 50%; }
   #globalHeader .title h1 {
-    font-size: 42px; }
+    font-size: 42px;
+    top: 50%; }
   #globalHeader .title h1:after {
     width: 290px; }
   /*Homepage*/
@@ -1373,6 +1500,59 @@ footer {
       font-size: 14px; }
     #content .info2-container div img {
       width: 250px; }
+  /*Dragons*/
+  #shop {
+    padding: 40px 30px; }
+    #shop .position-initial {
+      transition: 0.5s;
+      right: -115vh;
+      position: fixed; }
+    #shop aside .table-container {
+      height: 400px; }
+      #shop aside .table-container #cart {
+        padding: 20px; }
+        #shop aside .table-container #cart #cartTable {
+          width: 600px; }
+          #shop aside .table-container #cart #cartTable ul {
+            padding: 0%; }
+            #shop aside .table-container #cart #cartTable ul li div {
+              font-size: 14px; }
+    #shop #shopTitle {
+      font-size: 36px; }
+    #shop hr {
+      width: 550px; }
+    #shop section .card {
+      width: 240px;
+      margin: 15px 15px 400px; }
+      #shop section .card .card-inner .card-front {
+        height: 360px; }
+        #shop section .card .card-inner .card-front h3 {
+          margin: 5px 0px 5px;
+          font-size: 18px; }
+        #shop section .card .card-inner .card-front img {
+          width: 220px; }
+        #shop section .card .card-inner .card-front p {
+          font-size: 18px;
+          margin: 5px; }
+        #shop section .card .card-inner .card-front #rarity {
+          font-size: 20px; }
+        #shop section .card .card-inner .card-front #rarity:after {
+          width: 210px; }
+        #shop section .card .card-inner .card-front .price {
+          padding: 5px; }
+          #shop section .card .card-inner .card-front .price p {
+            font-size: 24px; }
+      #shop section .card .card-inner .card-back {
+        width: 240px;
+        height: 360px; }
+        #shop section .card .card-inner .card-back img {
+          margin: 10px;
+          width: 200px; }
+        #shop section .card .card-inner .card-back .select {
+          margin: 10px 20px;
+          padding: 15px 0; }
+          #shop section .card .card-inner .card-back .select p {
+            font-size: 24px; }
   /*About*/
   #about .section2 {
     padding: 20px 0; }
@@ -1463,7 +1643,7 @@ footer {
       position: absolute;
       background: rgba(0, 0, 0, 0.885);
       width: 60%;
-      right: 23.8vw;
+      right: 19.5vw;
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px; }
       #globalHeader .responsive-header .header-mobile .dropdown-menu #dropdown ul {
@@ -1549,7 +1729,85 @@ footer {
       width: 410px;
       font-size: 14px; }
     #content .info2-container div img {
-      width: 200px; }
+      width: 250px; }
+  /*Dragons*/
+  #shop {
+    padding: 35px 10px; }
+    #shop .position-initial {
+      transition: 0.5s;
+      right: -77vh;
+      position: fixed; }
+    #shop aside #cart-toggle {
+      height: 35px; }
+      #shop aside #cart-toggle .cart-icon img {
+        width: 35px; }
+      #shop aside #cart-toggle #number-container {
+        width: 17%;
+        padding: 3px 10px; }
+        #shop aside #cart-toggle #number-container div {
+          font-size: 10px; }
+    #shop aside .table-container {
+      height: 280px; }
+      #shop aside .table-container #cart {
+        padding: 10px 10px 0 0; }
+        #shop aside .table-container #cart #cartTable {
+          width: 350px;
+          padding: 0px; }
+          #shop aside .table-container #cart #cartTable ul {
+            padding: 0%;
+            padding-left: 10px; }
+            #shop aside .table-container #cart #cartTable ul li {
+              padding: 12px 15px; }
+              #shop aside .table-container #cart #cartTable ul li div {
+                font-size: 12px; }
+                #shop aside .table-container #cart #cartTable ul li div #clearSelection {
+                  font-size: 16px; }
+                #shop aside .table-container #cart #cartTable ul li div #checkout a {
+                  font-size: 16px; }
+              #shop aside .table-container #cart #cartTable ul li .removeBtn {
+                padding: 3px 5px; }
+                #shop aside .table-container #cart #cartTable ul li .removeBtn img {
+                  width: 10px; }
+            #shop aside .table-container #cart #cartTable ul .col-2 {
+              flex-basis: 20%; }
+            #shop aside .table-container #cart #cartTable ul .col-3 {
+              flex-basis: 10%; }
+    #shop #shopTitle {
+      font-size: 36px; }
+    #shop hr {
+      width: 450px; }
+    #shop section .card {
+      width: 200px;
+      margin: 15px 15px 360px; }
+      #shop section .card .card-inner .card-front {
+        height: 328px; }
+        #shop section .card .card-inner .card-front h3 {
+          margin: 5px 0px 5px;
+          font-size: 16px; }
+        #shop section .card .card-inner .card-front img {
+          width: 180px; }
+        #shop section .card .card-inner .card-front p {
+          font-size: 18px;
+          margin: 5px; }
+        #shop section .card .card-inner .card-front #rarity {
+          font-size: 20px; }
+        #shop section .card .card-inner .card-front #rarity:after {
+          width: 170px; }
+        #shop section .card .card-inner .card-front .price {
+          padding: 5px; }
+          #shop section .card .card-inner .card-front .price p {
+            font-size: 24px; }
+      #shop section .card .card-inner .card-back {
+        width: 200px;
+        height: 328px; }
+        #shop section .card .card-inner .card-back img {
+          margin: 10px;
+          width: 150px; }
+        #shop section .card .card-inner .card-back .select {
+          margin: 38px 15px;
+          padding: 15px 0; }
+          #shop section .card .card-inner .card-back .select p {
+            font-size: 24px; }
   /*About*/
   #about .section1 {
     margin: 40px 30px; }
@@ -1600,29 +1858,654 @@ footer {
   #contact h1 {
     padding-top: 100px;
     font-size: 32px; }
-  #contact .formulary fieldset {
-    width: 300px; }
-    #contact .formulary fieldset div {
-      margin: 20px 0; }
-      #contact .formulary fieldset div label {
-        margin: 0;
-        font-size: 22px; }
-      #contact .formulary fieldset div input {
+  #contact .formulary {
+    margin-top: -10px; }
+    #contact .formulary fieldset {
+      width: 300px; }
+      #contact .formulary fieldset div {
+        margin: 20px 0; }
+        #contact .formulary fieldset div label {
+          margin: 0;
+          font-size: 22px; }
+        #contact .formulary fieldset div input {
+          margin-top: -15px;
+          font-size: 18px;
+          padding: 10px;
+          height: 20px; }
+        #contact .formulary fieldset div textarea {
+          margin-top: -15px;
+          font-size: 18px;
+          padding: 10px;
+          height: 120px; }
+    #contact .formulary div {
+      margin: 20px 0px; }
+      #contact .formulary div .checkbox .field {
+        width: 10px;
+        height: 10px; }
+      #contact .formulary div .checkbox label {
+        font-size: 14px; }
+      #contact .formulary div .buttons input {
+        width: 150px;
+        margin: 0px 20px;
+        font-size: 22px; } }
+
+@media (max-width: 480px) {
+  /*****HEADER*****/
+  .headerBG {
+    padding-bottom: 400px; }
+  .headerBG-dragons {
+    padding-bottom: 320px; }
+  .headerBG-about {
+    padding-bottom: 320px; }
+  #globalHeader .responsive-header .header-mobile .logo {
+    width: 40px;
+    margin: 10px 0px 10px 20px; }
+  #globalHeader .responsive-header .header-mobile .dropdown-menu {
+    margin: 10px 0px;
+    text-align: center; }
+    #globalHeader .responsive-header .header-mobile .dropdown-menu #dropdown-trigger {
+      transition: 0.5s;
+      width: 32px; }
+    #globalHeader .responsive-header .header-mobile .dropdown-menu .dropdown-trigger-up {
+      transition: 0.5s;
+      -webkit-transform: scaleY(-1);
+      transform: scaleY(-1); }
+    #globalHeader .responsive-header .header-mobile .dropdown-menu .dropdown-hidden {
+      top: -380%;
+      transition: 0.5s; }
+    #globalHeader .responsive-header .header-mobile .dropdown-menu .dropdown-shown {
+      top: 99%;
+      transition: 0.5s; }
+    #globalHeader .responsive-header .header-mobile .dropdown-menu #dropdown {
+      z-index: 1;
+      transition: 0.5s;
+      position: absolute;
+      background: rgba(0, 0, 0, 0.885);
+      width: 60%;
+      right: 19.5;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px; }
+      #globalHeader .responsive-header .header-mobile .dropdown-menu #dropdown ul {
+        text-align: center;
+        padding: 0%;
+        padding: 5px; }
+        #globalHeader .responsive-header .header-mobile .dropdown-menu #dropdown ul a {
+          text-decoration: none;
+          color: #fff; }
+          #globalHeader .responsive-header .header-mobile .dropdown-menu #dropdown ul a li {
+            list-style-type: none;
+            display: block;
+            font-size: 28px;
+            margin: 15px; }
+          #globalHeader .responsive-header .header-mobile .dropdown-menu #dropdown ul a li:hover {
+            color: #fff; }
+          #globalHeader .responsive-header .header-mobile .dropdown-menu #dropdown ul a li:active {
+            color: #efc864; }
+  #globalHeader .responsive-header .header-mobile .header-vectors {
+    margin: 10px 20px 10px 0px; }
+    #globalHeader .responsive-header .header-mobile .header-vectors .location img {
+      width: 32px;
+      height: 32px; }
+    #globalHeader .responsive-header .header-mobile .header-vectors .account img {
+      width: 32px;
+      height: 32px; }
+  #globalHeader .indexButton a {
+    width: 200px; }
+    #globalHeader .indexButton a button {
+      font-size: 22px; }
+  #globalHeader .title h1 {
+    font-size: 28px; }
+  #globalHeader .title h1:after {
+    width: 190px; }
+  /*Homepage*/
+  #content article h1 {
+    font-size: 32px; }
+  #content article p {
+    font-size: 10px; }
+  #content .info-container {
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 30px; }
+    #content .info-container div h2 {
+      font-size: 24px; }
+    #content .info-container div p {
+      width: 265px;
+      font-size: 12px; }
+    #content .info-container div button {
+      margin: 20px auto 0px;
+      font-size: 16px; }
+    #content .info-container div img {
+      width: 200px; }
+  #content .info1-container {
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 30px; }
+    #content .info1-container div h2 {
+      font-size: 24px; }
+    #content .info1-container div p {
+      width: 265px;
+      font-size: 12px; }
+      #content .info1-container div p a {
+        font-size: inherit; }
+    #content .info1-container div button {
+      margin: 20px auto 0px;
+      font-size: 24px; }
+    #content .info1-container div img {
+      width: 200px; }
+  #content .info2-container {
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 30px 30px; }
+    #content .info2-container div h2 {
+      font-size: 24px; }
+    #content .info2-container div p {
+      width: 265px;
+      font-size: 12px; }
+    #content .info2-container div img {
+      width: 200px; }
+  /*Dragons*/
+  #shop {
+    padding: 25px 10px; }
+    #shop .position-initial {
+      transition: 0.5s;
+      right: -85vh;
+      position: fixed; }
+    #shop aside {
+      top: 25%; }
+      #shop aside #cart-toggle {
+        height: 30px; }
+        #shop aside #cart-toggle .cart-icon img {
+          width: 30px; }
+        #shop aside #cart-toggle #number-container {
+          width: 17%;
+          padding: 3px 8px; }
+          #shop aside #cart-toggle #number-container div {
+            font-size: 8px; }
+      #shop aside .table-container {
+        height: 230px; }
+        #shop aside .table-container #cart {
+          padding: 10px 10px 0 0; }
+          #shop aside .table-container #cart #cartTable {
+            width: 250px;
+            padding: 0px; }
+            #shop aside .table-container #cart #cartTable ul {
+              padding: 0%;
+              padding-left: 10px; }
+              #shop aside .table-container #cart #cartTable ul li {
+                padding: 12px 15px; }
+                #shop aside .table-container #cart #cartTable ul li div {
+                  font-size: 10px; }
+                  #shop aside .table-container #cart #cartTable ul li div #clearSelection {
+                    font-size: 12px; }
+                  #shop aside .table-container #cart #cartTable ul li div #checkout {
+                    padding: 7.2px 20px; }
+                    #shop aside .table-container #cart #cartTable ul li div #checkout a {
+                      font-size: 12px; }
+                #shop aside .table-container #cart #cartTable ul li .removeBtn {
+                  padding: 3px 5px; }
+                  #shop aside .table-container #cart #cartTable ul li .removeBtn img {
+                    width: 10px; }
+              #shop aside .table-container #cart #cartTable ul .col-2 {
+                flex-basis: 20%; }
+              #shop aside .table-container #cart #cartTable ul .col-3 {
+                flex-basis: 10%; }
+    #shop #shopTitle {
+      font-size: 32px;
+      padding-bottom: 10px; }
+    #shop hr {
+      width: 270px; }
+    #shop section .card {
+      width: 240px;
+      margin: 15px 15px 390px; }
+      #shop section .card .card-inner .card-front {
+        height: 360px; }
+        #shop section .card .card-inner .card-front h3 {
+          margin: 5px 0px 5px;
+          font-size: 18px; }
+        #shop section .card .card-inner .card-front img {
+          width: 220px; }
+        #shop section .card .card-inner .card-front p {
+          font-size: 18px;
+          margin: 5px; }
+        #shop section .card .card-inner .card-front #rarity {
+          font-size: 20px; }
+        #shop section .card .card-inner .card-front #rarity:after {
+          width: 210px; }
+        #shop section .card .card-inner .card-front .price {
+          padding: 5px; }
+          #shop section .card .card-inner .card-front .price p {
+            font-size: 24px; }
+      #shop section .card .card-inner .card-back {
+        width: 240px;
+        height: 360px; }
+        #shop section .card .card-inner .card-back img {
+          margin: 10px;
+          width: 200px; }
+        #shop section .card .card-inner .card-back .select {
+          margin: 8px 15px;
+          padding: 15px 0; }
+          #shop section .card .card-inner .card-back .select p {
+            font-size: 24px; }
+  /*About*/
+  #about .section1 {
+    margin: 40px 30px; }
+    #about .section1 .information {
+      flex-flow: column; }
+      #about .section1 .information div {
+        margin: 20px 20px; }
+        #about .section1 .information div h2 {
+          text-align: center;
+          font-size: 24px; }
+        #about .section1 .information div p {
+          text-align: center;
+          width: 300px;
+          font-size: 14px; }
+        #about .section1 .information div img {
+          width: 300px; }
+    #about .section1 .visionAndMission {
+      margin: 20px 30px;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center; }
+      #about .section1 .visionAndMission .VAMimg img {
+        width: 150px; }
+      #about .section1 .visionAndMission .vision {
+        margin: 20px 0; }
+      #about .section1 .visionAndMission h2 {
+        font-size: 24px;
+        margin-bottom: 10px; }
+      #about .section1 .visionAndMission .mission {
+        margin: 20px 0px; }
+      #about .section1 .visionAndMission p {
+        width: 300px;
+        font-size: 14px; }
+  #about .section2 {
+    padding: 10px 0; }
+    #about .section2 article .adopt {
+      margin: 15px 30px; }
+      #about .section2 article .adopt h3 {
         font-size: 18px;
-        padding: 10px;
+        margin-bottom: 10px; }
+      #about .section2 article .adopt p {
+        width: 300px;
+        font-size: 12px; }
+      #about .section2 article .adopt img {
+        width: 250px; }
+  /*Contact*/
+  #contact h1 {
+    padding-top: 100px;
+    font-size: 22px; }
+  #contact .formulary {
+    margin-top: -30px; }
+    #contact .formulary fieldset {
+      width: 230px; }
+      #contact .formulary fieldset div {
+        margin: 15px 0; }
+        #contact .formulary fieldset div label {
+          margin: 0;
+          font-size: 18px; }
+        #contact .formulary fieldset div input {
+          margin-top: -15px;
+          font-size: 14px;
+          padding: 10px;
+          height: 10px; }
+        #contact .formulary fieldset div textarea {
+          margin-top: -15px;
+          font-size: 14px;
+          padding: 10px;
+          height: 100px; }
+    #contact .formulary div {
+      margin: 20px 0px; }
+      #contact .formulary div .checkbox {
+        margin: 10px 10px; }
+        #contact .formulary div .checkbox .field {
+          width: 20px;
+          height: 20px; }
+        #contact .formulary div .checkbox label {
+          font-size: 14px; }
+      #contact .formulary div .buttons input {
+        width: 130px;
+        margin: 0px 10px;
+        font-size: 20px; }
+  /*****FOOTER*****/
+  footer {
+    padding: 20px; }
+    footer section {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center; }
+      footer section .copyright p {
+        font-size: 12px; }
+      footer section .social img {
+        margin: 20px 10px;
+        width: 32px; }
+      footer section .policies ul li {
+        margin: 0 10px; }
+        footer section .policies ul li a {
+          text-decoration: underline;
+          font-size: 10px; } }
+
+@media (max-width: 320px) {
+  /*****HEADER*****/
+  .headerBG {
+    padding-bottom: 280px; }
+  .headerBG-dragons {
+    padding-bottom: 280px; }
+  .headerBG-about {
+    padding-bottom: 280px; }
+  #globalHeader .responsive-header .header-mobile .logo {
+    width: 30px;
+    margin: 10px 0px 10px 20px; }
+  #globalHeader .responsive-header .header-mobile .dropdown-menu {
+    margin: 10px 0px;
+    text-align: center; }
+    #globalHeader .responsive-header .header-mobile .dropdown-menu #dropdown-trigger {
+      transition: 0.5s;
+      width: 25px; }
+    #globalHeader .responsive-header .header-mobile .dropdown-menu .dropdown-trigger-up {
+      transition: 0.5s;
+      -webkit-transform: scaleY(-1);
+      transform: scaleY(-1); }
+    #globalHeader .responsive-header .header-mobile .dropdown-menu .dropdown-hidden {
+      top: -380%;
+      transition: 0.5s; }
+    #globalHeader .responsive-header .header-mobile .dropdown-menu .dropdown-shown {
+      top: 99%;
+      transition: 0.5s; }
+    #globalHeader .responsive-header .header-mobile .dropdown-menu #dropdown {
+      z-index: 1;
+      transition: 0.5s;
+      position: absolute;
+      background: rgba(0, 0, 0, 0.885);
+      width: 60%;
+      right: 19.5vw;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px; }
+      #globalHeader .responsive-header .header-mobile .dropdown-menu #dropdown ul {
+        text-align: center;
+        padding: 0%;
+        padding: 5px; }
+        #globalHeader .responsive-header .header-mobile .dropdown-menu #dropdown ul a {
+          text-decoration: none;
+          color: #fff; }
+          #globalHeader .responsive-header .header-mobile .dropdown-menu #dropdown ul a li {
+            list-style-type: none;
+            display: block;
+            font-size: 20px;
+            margin: 15px; }
+          #globalHeader .responsive-header .header-mobile .dropdown-menu #dropdown ul a li:hover {
+            color: #fff; }
+          #globalHeader .responsive-header .header-mobile .dropdown-menu #dropdown ul a li:active {
+            color: #efc864; }
+  #globalHeader .responsive-header .header-mobile .header-vectors {
+    margin: 10px 20px 10px 0px; }
+    #globalHeader .responsive-header .header-mobile .header-vectors .location img {
+      width: 25px;
+      height: 25px; }
+    #globalHeader .responsive-header .header-mobile .header-vectors .account img {
+      width: 25px;
+      height: 25px; }
+  #globalHeader .indexButton a {
+    top: 50%;
+    width: 200px; }
+    #globalHeader .indexButton a button {
+      font-size: 18px; }
+  #globalHeader .title h1 {
+    top: 50%;
+    font-size: 24px; }
+  #globalHeader .title h1:after {
+    width: 170px; }
+  /*Homepage*/
+  #content article h1 {
+    font-size: 28px;
+    margin: 0 20px; }
+  #content article h1:after {
+    width: 150px; }
+  #content article p {
+    font-size: 10px; }
+  #content .info-container {
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 30px; }
+    #content .info-container div h2 {
+      font-size: 24px;
+      margin: 0 5px; }
+    #content .info-container div p {
+      width: 250px;
+      font-size: 12px; }
+    #content .info-container div button {
+      margin: 20px auto 0px;
+      font-size: 20px; }
+    #content .info-container div img {
+      margin-top: -15px;
+      width: 150px; }
+  #content .info1-container {
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 30px; }
+    #content .info1-container div h2 {
+      font-size: 24px;
+      margin: 0 5px; }
+    #content .info1-container div p {
+      width: 250px;
+      font-size: 12px; }
+      #content .info1-container div p a {
+        font-size: inherit; }
+    #content .info1-container div button {
+      margin: 20px auto 0px;
+      font-size: 20px; }
+    #content .info1-container div img {
+      margin-bottom: -25px;
+      width: 150px; }
+  #content .info2-container {
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 30px 30px; }
+    #content .info2-container div h2 {
+      font-size: 24px;
+      margin: 0 5px; }
+    #content .info2-container div p {
+      width: 250px;
+      font-size: 12px; }
+    #content .info2-container div img {
+      margin-top: -15px;
+      width: 150px; }
+  /*Dragons*/
+  #shop {
+    padding: 25px 10px; }
+    #shop .position-initial {
+      transition: 0.5s;
+      right: -112vh;
+      position: fixed; }
+    #shop aside {
+      top: 25%; }
+      #shop aside #cart-toggle {
+        padding: 15px;
         height: 20px; }
-      #contact .formulary fieldset div textarea {
-        font-size: 18px;
+        #shop aside #cart-toggle .cart-icon img {
+          width: 20px; }
+        #shop aside #cart-toggle #number-container {
+          width: 10%;
+          padding: 1px 6.8px; }
+          #shop aside #cart-toggle #number-container div {
+            font-size: 7px; }
+      #shop aside .table-container {
+        height: 170px; }
+        #shop aside .table-container #cart {
+          padding: 10px 10px 0 0; }
+          #shop aside .table-container #cart #cartTable {
+            width: 250px;
+            padding: 0px; }
+            #shop aside .table-container #cart #cartTable ul {
+              padding: 0%;
+              padding-left: 10px; }
+              #shop aside .table-container #cart #cartTable ul li {
+                padding: 12px 15px; }
+                #shop aside .table-container #cart #cartTable ul li div {
+                  font-size: 10px; }
+                  #shop aside .table-container #cart #cartTable ul li div #clearSelection {
+                    font-size: 12px; }
+                  #shop aside .table-container #cart #cartTable ul li div #checkout {
+                    padding: 7.2px 20px; }
+                    #shop aside .table-container #cart #cartTable ul li div #checkout a {
+                      font-size: 12px; }
+                #shop aside .table-container #cart #cartTable ul li .removeBtn {
+                  padding: 3px 5px; }
+                  #shop aside .table-container #cart #cartTable ul li .removeBtn img {
+                    width: 10px; }
+              #shop aside .table-container #cart #cartTable ul .col-2 {
+                flex-basis: 20%; }
+              #shop aside .table-container #cart #cartTable ul .col-3 {
+                flex-basis: 10%; }
+    #shop #shopTitle {
+      font-size: 32px;
+      padding-bottom: 10px; }
+    #shop hr {
+      width: 270px; }
+    #shop section .card {
+      width: 240px;
+      margin: 15px 15px 390px; }
+      #shop section .card .card-inner .card-front {
+        height: 360px; }
+        #shop section .card .card-inner .card-front h3 {
+          margin: 5px 0px 5px;
+          font-size: 18px; }
+        #shop section .card .card-inner .card-front img {
+          width: 220px; }
+        #shop section .card .card-inner .card-front p {
+          font-size: 18px;
+          margin: 5px; }
+        #shop section .card .card-inner .card-front #rarity {
+          font-size: 20px; }
+        #shop section .card .card-inner .card-front #rarity:after {
+          width: 210px; }
+        #shop section .card .card-inner .card-front .price {
+          padding: 5px; }
+          #shop section .card .card-inner .card-front .price p {
+            font-size: 24px; }
+      #shop section .card .card-inner .card-back {
+        width: 240px;
+        height: 360px; }
+        #shop section .card .card-inner .card-back img {
+          margin: 10px;
+          width: 200px; }
+        #shop section .card .card-inner .card-back .select {
+          margin: 8px 15px;
+          padding: 15px 0; }
+          #shop section .card .card-inner .card-back .select p {
+            font-size: 24px; }
+  /*About*/
+  #about .section1 {
+    margin: 40px 30px; }
+    #about .section1 .information {
+      flex-flow: column; }
+      #about .section1 .information div {
+        margin: 10px 0; }
+        #about .section1 .information div h2 {
+          text-align: center;
+          font-size: 24px; }
+        #about .section1 .information div p {
+          text-align: center;
+          width: 250px;
+          font-size: 12px; }
+        #about .section1 .information div img {
+          width: 250px; }
+    #about .section1 .visionAndMission {
+      margin: 20px 30px;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center; }
+      #about .section1 .visionAndMission .VAMimg img {
+        width: 130px; }
+      #about .section1 .visionAndMission .vision {
+        margin: 20px 0; }
+      #about .section1 .visionAndMission h2 {
+        font-size: 20px;
+        margin-bottom: 10px; }
+      #about .section1 .visionAndMission .mission {
+        margin: 20px 0px; }
+      #about .section1 .visionAndMission p {
+        width: 250px;
+        font-size: 12px; }
+  #about .section2 {
+    padding: 10px 0; }
+    #about .section2 article .adopt {
+      margin: 15px 30px; }
+      #about .section2 article .adopt h3 {
+        font-size: 16px;
+        margin-bottom: 10px; }
+      #about .section2 article .adopt p {
+        width: 250px;
+        font-size: 12px; }
+      #about .section2 article .adopt img {
+        width: 250px; }
+  /*Contact*/
+  #contact h1 {
+    padding-top: 80px;
+    font-size: 20px; }
+  #contact .formulary {
+    margin-top: -30px; }
+    #contact .formulary fieldset {
+      width: 200px; }
+      #contact .formulary fieldset div {
+        margin: 15px 0; }
+        #contact .formulary fieldset div label {
+          margin: 0;
+          font-size: 18px; }
+        #contact .formulary fieldset div input {
+          margin-top: -15px;
+          font-size: 12px;
+          padding: 10px;
+          height: 10px; }
+        #contact .formulary fieldset div textarea {
+          margin-top: -15px;
+          font-size: 12px;
+          padding: 10px;
+          height: 80px; }
+    #contact .formulary div {
+      margin: 20px 0px; }
+      #contact .formulary div .checkbox {
+        margin: 10px 10px; }
+        #contact .formulary div .checkbox .field {
+          width: 20px;
+          height: 20px; }
+        #contact .formulary div .checkbox label {
+          font-size: 14px; }
+      #contact .formulary div .buttons input {
         padding: 10px;
-        height: 120px; }
-  #contact .formulary div {
-    margin: 20px 0px; }
-    #contact .formulary div .checkbox .field {
-      width: 10px;
-      height: 10px; }
-    #contact .formulary div .checkbox label {
-      font-size: 14px; }
-    #contact .formulary div .buttons input {
-      width: 150px;
-      margin: 0px 20px;
-      font-size: 22px; } }
+        width: 130px;
+        margin: 0px 10px;
+        font-size: 18px; }
+  /*****FOOTER*****/
+  footer {
+    padding: 20px; }
+    footer section {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center; }
+      footer section .copyright p {
+        font-size: 12px; }
+      footer section .social img {
+        margin: 20px 10px;
+        width: 25px; }
+      footer section .policies ul li {
+        margin: 0 10px; }
+        footer section .policies ul li a {
+          text-decoration: underline;
+          font-size: 10px; } }
