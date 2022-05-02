@@ -2,6 +2,8 @@ let dropdownTrigger = document.getElementById('dropdown-trigger');
 let dropdown = document.getElementById('dropdown');
 pos = false;
 
+//Expand and contract the cart.
+
 dropdownTrigger.onclick = () => {
     if (pos == false) {
         dropdownTrigger.classList.add('dropdown-trigger-up');

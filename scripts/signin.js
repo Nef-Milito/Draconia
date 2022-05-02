@@ -1,3 +1,5 @@
+//Script still under development.
+
 let createAccountBtn = document.getElementById('newAccount-btn');
 let registerBtn = document.getElementById('register-btn');
 let logInForm = document.getElementById('login-form');
