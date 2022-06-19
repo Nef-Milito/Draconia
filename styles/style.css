@@ -52,6 +52,7 @@ html {
   background: rgba(0, 0, 0, 0.775);
   display: grid;
   grid-template-areas: "logo navigation header-vectors";
+  grid-template-columns: 20% auto 20%;
   align-items: center;
   z-index: 2;
   position: fixed;
@@ -1031,6 +1032,7 @@ footer {
       background: rgba(0, 0, 0, 0.775);
       display: grid;
       grid-template-areas: "logo dropdown-menu header-vectors";
+      grid-template-columns: 20% auto 20%;
       align-items: center;
       z-index: 2;
       position: fixed;
@@ -1261,7 +1263,7 @@ footer {
   .headerBG-about {
     padding-bottom: 576px; }
   #globalHeader .responsive-header .header-mobile .dropdown-menu #dropdown {
-    right: 14.3vw; }
+    right: 15vw; }
   #globalHeader .responsive-header .header-mobile .header-vectors .location img {
     margin: 0 5px 0 0; }
   #globalHeader .responsive-header .header-mobile .header-vectors .account img {

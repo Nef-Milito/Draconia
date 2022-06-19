@@ -617,6 +617,7 @@
                 background: rgba(0, 0, 0, 0.775);
                 display: grid;
                 grid-template-areas: "logo dropdown-menu header-vectors";
+                grid-template-columns: 20% auto 20%;
                 align-items: center;
                 z-index: 2;
                 position: fixed;
@@ -1083,7 +1084,7 @@
     #globalHeader {
         .responsive-header .header-mobile {
             .dropdown-menu #dropdown {
-                right: 14.3vw;
+                right: 15vw;
             }
 
             .header-vectors {

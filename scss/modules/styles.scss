@@ -53,6 +53,7 @@ html {
         background: rgba(0, 0, 0, 0.775);
         display: grid;
         grid-template-areas: "logo navigation header-vectors";
+        grid-template-columns: 20% auto 20%;
         align-items: center;
         z-index: 2;
         position: fixed;
