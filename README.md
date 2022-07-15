@@ -1,5 +1,4 @@
-# Draconia
-Raise a Real Dragon.
+# Draconia: Raise a real Dragon.
 
 Hello!
 
@@ -10,6 +9,8 @@ Project is not finished. There are still some things left to do. Anything you fi
 
 Cheers!
 
+You may access the website here: https://neftisdragon.github.io/Draconia/
+
 * * *
 
 ## Image Credits
@@ -19,14 +20,13 @@ All graphic content found in "dragons.html" belongs to *Century: Age of Ashes* (
 **index.html:**
 1- Header Image: "Dusk Serenity" by https://www.deviantart.com/alectorfencer.
 2- Dragon Egg from *Century: Age of Ashes*.
-3- "Enjoy the moment of life" by Cindy A. Avelino.
+3- "Enjoy the moment of life" by *Cindy A. Avelino*.
 
 **about.html:**
 1- Header Image by https://unsplash.com/@michaelfousert.
 2- Gif taken from *Game of Thrones* by *HBO*.
 3- "Desire" by https://mobile.twitter.com/Tallion91.
 4- "Wyvern at Dusk" by https://www.deviantart.com/katepfeilschiefter.
-
 
 All vectors used were taken from https://www.freepik.com.
 
