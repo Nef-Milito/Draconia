@@ -222,8 +222,15 @@ html {
                 border: none;
                 border-radius: 10px;
                 cursor: pointer;
-                opacity: 70%;
+                background-color: #000000ba;
+            }
+
+            button:hover {
                 background-color: #000;
+            }
+
+            button:active {
+                background-color: #0000005f;
             }
 
             img {
@@ -270,8 +277,15 @@ html {
                 border: none;
                 border-radius: 10px;
                 cursor: pointer;
-                opacity: 70%;
+                background-color: #000000ba;
+            }
+
+            button:hover {
                 background-color: #000;
+            }
+
+            button:active {
+                background-color: #0000005f;
             }
 
             img {
@@ -413,6 +427,10 @@ html {
                                 background-color: rgba(241, 37, 37, 0.901);
                             }
 
+                            .removeBtn:active {
+                                background-color: rgba(241, 37, 37, 0.358);
+                            }
+
                             div {
                                 #clearSelection {
                                     border: none;
@@ -426,6 +444,10 @@ html {
                                 #clearSelection:hover {
                                     background-color: rgba(241, 37, 37, 0.901);
                                     color: #fff;
+                                }
+
+                                #clearSelection:active {
+                                    background-color: rgba(241, 37, 37, 0.358);
                                 }
 
                                 #checkout {
@@ -445,6 +467,10 @@ html {
                                 #checkout:hover {
                                     background-color: rgba(37, 241, 37, 0.901);
                                     color: #fff;
+                                }
+
+                                #checkout:active {
+                                    background-color: rgba(37, 241, 37, 0.355);
                                 }
                             }
                         }
@@ -628,6 +654,10 @@ html {
 
                     .select:hover {
                         background-color: #d4b05a;
+                    }
+
+                    .select:active {
+                        background-color: #d5b978;
                     }
                 }
 
@@ -847,6 +877,10 @@ html {
                 input:hover {
                     background-color: #e0bb60;
                     cursor: pointer;
+                }
+
+                input:active {
+                    background-color: #dac287;
                 }
             }
         }
